@@ -1,0 +1,3 @@
+{
+  "rewrites": [{ "source": "/(.*)", "destination": "/OmniVerseProfile_v3_OmniPuppet.html" }]
+}

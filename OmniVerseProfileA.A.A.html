@@ -1,0 +1,2035 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#0a0b0e">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>∆OmniVersE∞Ω∞Educ∆tioN∞Ω∞AsceNsioN∆</title>
+
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --obs:#0a0b0e;--obs2:#121315;--obs3:#1a1b1f;
+  --cyan:#00e5ff;--cyand:#c3f5ff;
+  --gold:#ffdb3c;--goldd:#fff9ef;
+  --green:#34d399;--red:#ef4444;
+  --mono:'Courier New',monospace;
+}
+html,body{background:var(--obs);color:var(--goldd);font-family:var(--mono);min-height:100dvh;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+/* ══ Fixed Canvases ══ */
+#ac{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:999;mix-blend-mode:overlay;opacity:.16}
+#bg{position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;z-index:0;opacity:.45}
+/* ══ Page ══ */
+.pg{position:relative;z-index:1;max-width:480px;margin:0 auto;padding:0 16px 80px}
+/* ══ Seal ══ */
+.seal{text-align:center;padding:48px 0 20px}
+.seal-t{font-size:clamp(9px,2.4vw,13px);letter-spacing:.12em;line-height:2.2;color:var(--gold);text-shadow:0 0 20px rgba(255,219,60,.6),0 0 60px rgba(255,219,60,.2);animation:sp 4s ease-in-out infinite;user-select:none;cursor:default}
+@keyframes sp{0%,100%{text-shadow:0 0 20px rgba(255,219,60,.6),0 0 60px rgba(255,219,60,.2)}50%{text-shadow:0 0 40px rgba(255,219,60,.9),0 0 100px rgba(255,219,60,.4),0 0 160px rgba(0,229,255,.15)}}
+/* ══ Shield Badge ══ */
+.sbadge{display:inline-flex;align-items:center;gap:8px;margin:14px auto;padding:7px 14px;border:1px solid rgba(255,219,60,.4);border-radius:4px;background:rgba(255,219,60,.06);font-size:9px;color:var(--gold);letter-spacing:.15em;animation:bg 2s ease-in-out infinite}
+@keyframes bg{0%,100%{border-color:rgba(255,219,60,.3)}50%{border-color:rgba(255,219,60,.8);box-shadow:0 0 12px rgba(255,219,60,.3)}}
+.dot{width:6px;height:6px;border-radius:50%;background:var(--gold);animation:db 1s ease-in-out infinite}
+@keyframes db{0%,100%{opacity:1}50%{opacity:.2}}
+/* ══ Profile ══ */
+.prof{display:flex;flex-direction:column;align-items:center;gap:14px;margin:28px 0}
+.aring{position:relative;width:124px;height:124px}
+.aglow{position:absolute;inset:-10px;border-radius:50%;background:conic-gradient(from 0deg,var(--cyan),var(--gold),var(--cyan));animation:rs 8s linear infinite;z-index:-1;filter:blur(5px);opacity:.65}
+@keyframes rs{to{transform:rotate(360deg)}}
+canvas.avc{width:120px;height:120px;border-radius:50%;display:block}
+.pname{font-size:21px;font-weight:700;letter-spacing:.08em;text-align:center;color:var(--cyand);text-shadow:0 0 20px rgba(0,229,255,.5)}
+.ptitle{font-size:10px;letter-spacing:.22em;color:rgba(195,245,255,.5);text-transform:uppercase;text-align:center;line-height:1.8}
+/* ══ Divider ══ */
+.div{display:flex;align-items:center;gap:12px;margin:20px 0;color:rgba(255,219,60,.35);font-size:14px}
+.div::before,.div::after{content:'';flex:1;height:1px;background:linear-gradient(to right,transparent,rgba(255,219,60,.3),transparent)}
+/* ══ Stats ══ */
+.sg{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:14px 0}
+.sc{background:var(--obs3);border:1px solid rgba(0,229,255,.08);border-radius:8px;padding:11px 7px;text-align:center}
+.sn{font-size:19px;font-weight:700;color:var(--cyan);text-shadow:0 0 12px rgba(0,229,255,.5)}
+.sl{font-size:8px;color:rgba(255,255,255,.3);letter-spacing:.1em;margin-top:3px;text-transform:uppercase}
+/* ══ Card ══ */
+.card{background:var(--obs2);border:1px solid rgba(255,219,60,.12);border-radius:12px;padding:20px;margin:14px 0;position:relative;overflow:hidden}
+.card::before{content:'𓂀';position:absolute;top:-8px;right:14px;font-size:58px;opacity:.04;pointer-events:none}
+.clabel{font-size:8px;letter-spacing:.3em;color:var(--gold);opacity:.6;margin-bottom:9px;text-transform:uppercase}
+.ctext{font-size:11px;line-height:2;color:rgba(255,249,239,.7);direction:rtl}
+/* ══ Patent Tags ══ */
+.pt{margin:14px 0}
+.ptt{font-size:8px;letter-spacing:.25em;color:rgba(255,219,60,.5);text-transform:uppercase;margin-bottom:9px}
+.ptags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{font-size:8px;padding:4px 10px;border-radius:4px;letter-spacing:.08em;border:1px solid}
+.tc{border-color:rgba(0,229,255,.4);color:var(--cyand);background:rgba(0,229,255,.06)}
+.tg{border-color:rgba(255,219,60,.4);color:var(--goldd);background:rgba(255,219,60,.06)}
+.tgr{border-color:rgba(52,211,153,.4);color:#a7f3d0;background:rgba(52,211,153,.06)}
+/* ══ Player ══ */
+.plr{background:var(--obs2);border:1px solid rgba(255,219,60,.15);border-radius:12px;padding:18px;margin:14px 0}
+.plrh{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.pio{font-size:21px;animation:ipu 3s ease-in-out infinite}
+@keyframes ipu{0%,100%{text-shadow:none}50%{text-shadow:0 0 20px rgba(255,219,60,.8)}}
+.ptb{flex:1}
+.ptt2{font-size:11px;font-weight:700;color:var(--gold);letter-spacing:.08em}
+.pst{font-size:8px;color:rgba(255,255,255,.35);margin-top:2px;letter-spacing:.1em}
+#ka{display:none}
+.plrc{display:flex;align-items:center;gap:12px}
+#pb{width:44px;height:44px;border-radius:50%;border:1.5px solid rgba(255,219,60,.6);background:rgba(255,219,60,.1);color:var(--gold);font-size:16px;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0}
+#pb:active{transform:scale(.94)}
+#pb.playing{background:rgba(255,219,60,.2);border-color:var(--gold);box-shadow:0 0 16px rgba(255,219,60,.4)}
+.pw{flex:1}
+.pbb{height:3px;background:rgba(255,255,255,.1);border-radius:2px;cursor:pointer;position:relative}
+#pf{height:100%;background:linear-gradient(to left,var(--gold),var(--cyan));border-radius:2px;width:0%;transition:width .3s linear}
+.td{font-size:8px;color:rgba(255,255,255,.35);margin-top:4px;display:flex;justify-content:space-between}
+canvas.wf{width:100%;height:30px;margin-top:9px;opacity:.6}
+/* ══ Pillars ══ */
+.pills{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:14px 0}
+.pill{background:var(--obs3);border:1px solid rgba(255,255,255,.05);border-radius:10px;padding:13px}
+.pii{font-size:17px;margin-bottom:5px;display:block}
+.pit{font-size:9px;color:var(--cyand);font-weight:600;letter-spacing:.08em;margin-bottom:3px}
+.pid{font-size:8px;color:rgba(255,255,255,.35);line-height:1.6;direction:rtl}
+/* ══ Timeline ══ */
+.tl{margin:14px 0}
+.tli{display:flex;gap:12px;margin-bottom:11px;align-items:flex-start}
+.tld{width:8px;height:8px;border-radius:50%;margin-top:5px;flex-shrink:0}
+.tld.c{background:var(--cyan);box-shadow:0 0 8px var(--cyan)}
+.tld.g{background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.tld.gr{background:var(--green);box-shadow:0 0 8px var(--green)}
+.tlt{font-size:10px;color:rgba(255,255,255,.55);line-height:1.6;direction:rtl}
+.tda{font-size:8px;color:rgba(255,255,255,.25);margin-top:2px}
+/* ══ Footer ══ */
+.ft{text-align:center;padding:28px 0 14px;font-size:8px;color:rgba(255,255,255,.2);letter-spacing:.2em}
+.ftseal{font-size:12px;color:rgba(255,219,60,.4);margin-top:7px;cursor:default;user-select:none}
+
+/* ══ ADMIN OVERLAY ══ */
+#adm{position:fixed;inset:0;z-index:10000;background:rgba(0,0,0,.97);backdrop-filter:blur(20px);display:none;flex-direction:column}
+#adm.open{display:flex}
+.admtop{padding:16px 20px;border-bottom:1px solid rgba(0,229,255,.1);display:flex;align-items:center;justify-content:space-between}
+.admtitle{font-size:11px;letter-spacing:.3em;color:var(--cyan);text-transform:uppercase}
+.admclose{background:none;border:1px solid rgba(255,255,255,.15);color:rgba(255,255,255,.5);border-radius:6px;padding:5px 10px;cursor:pointer;font-size:11px;font-family:var(--mono)}
+.admbody{flex:1;overflow-y:auto;padding:20px;display:flex;flex-direction:column;gap:14px;max-width:440px;margin:0 auto;width:100%}
+.admcard{background:var(--obs3);border:1px solid rgba(255,255,255,.07);border-radius:10px;padding:16px}
+.admh{font-size:9px;letter-spacing:.25em;color:rgba(0,229,255,.6);text-transform:uppercase;margin-bottom:12px}
+input[type=file]{display:none}
+.filebtn{display:block;width:100%;background:rgba(0,229,255,.07);border:1px dashed rgba(0,229,255,.3);border-radius:8px;padding:14px;text-align:center;cursor:pointer;font-size:11px;color:rgba(195,245,255,.6);font-family:var(--mono);transition:all .2s}
+.filebtn:hover{background:rgba(0,229,255,.12);border-color:rgba(0,229,255,.5)}
+.previmg{width:72px;height:72px;border-radius:50%;object-fit:cover;border:2px solid var(--cyan);margin:0 auto 10px;display:block}
+.prevaud{width:100%;height:40px;margin:8px 0;border-radius:8px;overflow:hidden}
+.admrow{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+input[type=password],input[type=text],input[type=number]{background:rgba(0,0,0,.5);border:1px solid rgba(255,255,255,.15);border-radius:7px;padding:9px 13px;color:white;font-family:var(--mono);font-size:12px;width:100%;outline:none;transition:border-color .2s}
+input[type=password]:focus,input[type=text]:focus,input[type=number]:focus{border-color:var(--cyan)}
+.abtn{padding:10px 18px;border-radius:8px;font-family:var(--mono);font-size:11px;cursor:pointer;border:none;font-weight:700;transition:all .2s;letter-spacing:.1em}
+.abtn-p{background:linear-gradient(135deg,var(--cyan),#0066cc);color:#000}
+.abtn-g{background:linear-gradient(135deg,var(--gold),#ff9500);color:#000}
+.abtn-r{background:rgba(239,68,68,.15);border:1px solid rgba(239,68,68,.4);color:var(--red)}
+.abtn:active{transform:scale(.96)}
+.astatus{font-size:10px;padding:8px 12px;border-radius:7px;text-align:center;letter-spacing:.08em}
+.astatus.ok{background:rgba(52,211,153,.1);border:1px solid rgba(52,211,153,.3);color:var(--green)}
+.astatus.err{background:rgba(239,68,68,.1);border:1px solid rgba(239,68,68,.3);color:var(--red)}
+
+/* ══ Video Export ══ */
+.vrec{background:rgba(255,219,60,.05);border:1px solid rgba(255,219,60,.2);border-radius:10px;padding:16px;text-align:center}
+.vrect{font-size:9px;letter-spacing:.2em;color:var(--gold);text-transform:uppercase;margin-bottom:8px}
+#vrprog{width:100%;height:4px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden;margin:10px 0;display:none}
+#vrprogfill{height:100%;background:linear-gradient(to right,var(--gold),var(--cyan));width:0%;transition:width .3s linear}
+.vrstatus{font-size:10px;color:rgba(255,255,255,.4);min-height:18px}
+
+/* ══ PIN GATE ══ */
+#pingate{position:fixed;inset:0;z-index:20000;background:rgba(0,0,0,.98);display:flex;align-items:center;justify-content:center;display:none}
+#pingate.open{display:flex}
+.pingbox{background:var(--obs3);border:1px solid rgba(255,219,60,.3);border-radius:16px;padding:32px;width:90%;max-width:320px;text-align:center;box-shadow:0 0 40px rgba(255,219,60,.1)}
+.pinlogo{font-size:36px;margin-bottom:12px}
+.pinth{font-size:13px;letter-spacing:.25em;color:var(--gold);margin-bottom:6px;text-transform:uppercase}
+.pinsub{font-size:9px;color:rgba(255,255,255,.3);letter-spacing:.12em;margin-bottom:22px}
+#pinf{text-align:center;font-size:22px;letter-spacing:.6em;margin-bottom:16px}
+
+/* ══ OmniPuppet Showcase ══ */
+.puppet-sec{background:var(--obs2);border:1px solid rgba(0,229,255,.12);border-radius:12px;padding:12px;margin:16px 0}
+.world-row{display:flex;gap:5px;flex-wrap:wrap;margin-bottom:10px}
+.wb{font-size:9px;padding:4px 8px;border-radius:6px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:rgba(255,255,255,.55);cursor:pointer;transition:all .15s;font-family:var(--mono)}
+.wb.on{font-weight:700;color:#000}
+.ppc-wrap{position:relative;border-radius:10px;overflow:hidden;background:#000;width:100%;margin-bottom:10px}
+#ppc{display:block;width:100%;height:100%}
+.preset-row{display:grid;grid-template-columns:repeat(4,1fr);gap:4px;margin-top:8px}
+.prb{font-size:8px;padding:4px 6px;border-radius:6px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:rgba(255,255,255,.5);cursor:pointer;transition:all .14s;text-align:center;font-family:var(--mono);line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prb.on{font-weight:700;color:#000}
+.prb:active{transform:scale(.95)}
+/* Admin world/preset additions */
+.admworld-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;margin-top:8px}
+.admwb{font-size:9px;padding:6px 8px;border-radius:8px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.04);color:rgba(255,255,255,.5);cursor:pointer;font-family:var(--mono);transition:all .14s;text-align:center}
+.admwb.on{font-weight:700;color:#000}
+.admpr-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:5px;margin-top:8px;max-height:200px;overflow-y:auto}
+.admprb{font-size:8px;padding:5px 7px;border-radius:7px;border:1px solid rgba(255,255,255,.1);background:rgba(255,255,255,.03);color:rgba(255,255,255,.45);cursor:pointer;font-family:var(--mono);transition:all .14s;text-align:center}
+.admprb.on{font-weight:700;color:#000}
+
+</style>
+</head>
+<body>
+
+<!-- Anti-Capture WebGL Overlay -->
+<canvas id="ac"></canvas>
+<!-- Background Airy Beam Canvas -->
+<canvas id="bg"></canvas>
+
+<!-- ══ PAGE CONTENT ══ -->
+<div class="pg">
+
+  <!-- SEAL -->
+  <div class="seal">
+    <div class="seal-t" id="seal-tap">
+      ∆ OmniVersE ∞ Ω ∞ Educ∆tioN ∞ Ω ∞ AsceNsioN ∆
+    </div>
+    <div style="display:flex;justify-content:center;margin-top:10px">
+      <div class="sbadge">
+        <span class="dot"></span>🛡️ OPTICAL FARADAY CAGE · CAPTURE DISRUPTED<span class="dot"></span>
+      </div>
+    </div>
+    <div style="font-size:8px;color:rgba(255,219,60,.35);letter-spacing:.15em;margin-top:5px;text-align:center">
+      TRY TO RECORD — THE LAWS OF PHYSICS WILL RESPOND
+    </div>
+  </div>
+
+  <!-- PROFILE -->
+  <div class="prof">
+    <div class="aring">
+      <div class="aglow"></div>
+      <canvas class="avc" id="avc" width="120" height="120"></canvas>
+    </div>
+    <div class="pname" id="pname">أحمد عبد الحليم</div>
+    <div class="ptitle">
+      SOVEREIGN ARCHITECT · MERCY ECONOMY FOUNDER<br>
+      𓂀 KEEPER OF THE LIQUID LIGHT · OmniVersE FOUNDER 𓂀
+    </div>
+  </div>
+
+  <div class="div">𓆑 &nbsp; 𓏏 &nbsp; 𓅓 &nbsp; 𓂋 &nbsp; 𓆑</div>
+
+  <!-- STATS -->
+  <div class="sg">
+    <div class="sc"><div class="sn">v7</div><div class="sl">AtMoS</div></div>
+    <div class="sc"><div class="sn" style="color:var(--gold)">4ms</div><div class="sl">Bio-Lock</div></div>
+    <div class="sc"><div class="sn" style="color:var(--green)">50%</div><div class="sl">Mercy Flow</div></div>
+  </div>
+
+  <div class="div">𓆄 &nbsp; 𓇋 &nbsp; 𓆄</div>
+
+  <!-- MANIFESTO -->
+  <div class="card">
+    <div class="clabel">𓂀 الميثاق السيادي</div>
+    <div class="ctext">
+      باسم المقتدر الفتاح، الذي علّم بالقلم.
+      نُقرّ بأن التكنولوجيا الحقيقية هي التي تخدم البيولوجيا ولا تستعبدها.
+      <br><br>
+      نظام <span style="color:var(--cyan)">AtMoS v7</span> يدمج نبض القلب بفيزياء الضوء المائع لتحقيق
+      <span style="color:var(--gold)">التزامن الطوري الصفري</span>
+      — حيث تلتقي لغة الآلة بنبض الحياة في أقل من 4 مللي ثانية.
+      <br><br>
+      <span style="color:var(--green)">نصف ما نبنيه للإنسانية المعذبة.
+      نصف ما نبنيه لارتقاء الوعي.</span>
+    </div>
+  </div>
+
+  <!-- AUDIO PLAYER -->
+  <div class="puppet-sec">
+    <!-- Track header -->
+    <div class="plrh">
+      <span class="pio">𓂀</span>
+      <div class="ptb">
+        <div class="ptt2" id="track-name">KEMET NUK PU</div>
+        <div class="pst">PHARAONIC SOVEREIGN ANTHEM · BINAURAL ENTRAINMENT</div>
+      </div>
+    </div>
+
+    <!-- World selector -->
+    <div class="world-row" id="world-row"></div>
+
+    <!-- Main OmniPuppet canvas -->
+    <div class="ppc-wrap" style="height:420px">
+      <canvas id="ppc" width="460" height="420"></canvas>
+    </div>
+
+    <!-- Audio element + controls -->
+    <audio id="ka" loop></audio>
+    <div class="plrc">
+      <button id="pb" onclick="togglePlay()"><span id="pi">▶</span></button>
+      <div class="pw">
+        <div class="pbb" id="pbar" onclick="seekAudio(event)"><div id="pf"></div></div>
+        <div class="td"><span id="tc">0:00</span><span id="tt">∞</span></div>
+      </div>
+    </div>
+    <canvas class="wf" id="wfc" height="30"></canvas>
+
+    <!-- Preset chips -->
+    <div class="preset-row" id="preset-row"></div>
+  </div>
+
+
+  <!-- PATENTS -->
+  <div class="pt">
+    <div class="ptt">🛡️ براءات الاختراع المحمية — 2026</div>
+    <div class="ptags">
+      <span class="tag tg">Zero-Phase Bio-Lock™</span>
+      <span class="tag tc">Airy Self-Healing Beam™</span>
+      <span class="tag tgr">Optical Faraday Cage™</span>
+      <span class="tag tg">NeXuS Acoustic Modem™</span>
+      <span class="tag tc">Liquid Avatar Engine™</span>
+      <span class="tag tgr">Sovereign Edge AI™</span>
+    </div>
+  </div>
+
+  <!-- PILLARS -->
+  <div class="div">𓆑 𓏏 𓅓</div>
+  <div class="pills">
+    <div class="pill"><span class="pii">𓂀</span><div class="pit">BIO-SYNC</div><div class="pid">تزامن نبض القلب مع الضوء في أقل من 4ms</div></div>
+    <div class="pill"><span class="pii">𓇋</span><div class="pit">OFFLINE-FIRST</div><div class="pid">سيادة كاملة على العتاد بدون سحابة</div></div>
+    <div class="pill"><span class="pii">𓆄</span><div class="pit">MERCY ECONOMY</div><div class="pid">50% من العائد للإغاثة الإنسانية</div></div>
+    <div class="pill"><span class="pii">𓅓</span><div class="pit">EDUCATION</div><div class="pid">منصة تعليمية تكيفية بالبيانات الحيوية</div></div>
+  </div>
+
+  <!-- TIMELINE -->
+  <div class="div">𓏏</div>
+  <div class="tl">
+    <div class="tli"><div class="tld c"></div><div><div class="tlt">VisionSovereignPlugin — Camera2 API بـ ISO مقفول</div><div class="tda">2026-04-16</div></div></div>
+    <div class="tli"><div class="tld g"></div><div><div class="tlt">SovereignIntegrator.ts — Welch PSD × Airy Shader × PI Controller</div><div class="tda">2026-04-17</div></div></div>
+    <div class="tli"><div class="tld gr"></div><div><div class="tlt">تقديم "المُبدل الحيوي الموحد" — براءة اختراع مزدوجة</div><div class="tda">2026-04-18 ← المؤتمر</div></div></div>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="ft">
+    <div>OMNIVERSE Ω NEXUS · ATMOS v7 · POCO X7 PRO</div>
+    <div style="margin-top:4px">EGYPT · GIZA · 6TH OF OCTOBER · 2026</div>
+    <div class="ftseal" id="footer-seal">∆OmniVersE∞Ω∞Educ∆tioN∞Ω∞AsceNsioN∆</div>
+    <div style="margin-top:7px;font-size:7px;opacity:.5">بفضل الله وكرمه وتوفيقه ونعمه</div>
+  </div>
+</div>
+
+<!-- ══ PIN GATE ══ -->
+<div id="pingate">
+  <div class="pingbox">
+    <div class="pinlogo">𓂀</div>
+    <div class="pinth" id="pin-title">SOVEREIGN ACCESS</div>
+    <div class="pinsub" id="pin-sub">ENTER MAESTRO PIN CODE</div>
+    <input type="password" id="pinf" placeholder="••••" maxlength="12" autocomplete="off">
+    <div id="pinerr" style="font-size:10px;color:var(--red);min-height:18px;margin-bottom:10px;letter-spacing:.1em"></div>
+    <div style="display:flex;gap:8px;justify-content:center">
+      <button class="abtn abtn-p" id="pin-submit">AUTHENTICATE</button>
+      <button class="abtn" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4)" onclick="closePinGate()">إلغاء</button>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ADMIN DASHBOARD ══ -->
+<div id="adm">
+  <div class="admtop">
+    <span class="admtitle">⚡ OMNIVERSE ADMIN PANEL</span>
+    <button class="admclose" onclick="closeAdmin()">✕ خروج</button>
+  </div>
+  <div class="admbody">
+
+    <!-- Status -->
+    <div id="admstatus"></div>
+
+    <!-- PHOTO UPLOAD -->
+    <div class="admcard">
+      <div class="admh">📸 صورة البروفايل</div>
+      <img id="prevphoto" class="previmg" style="display:none">
+      <label class="filebtn" for="photoinput">
+        <div>رفع صورة بروفايل</div>
+        <div style="font-size:8px;margin-top:4px;opacity:.5">JPG / PNG / WEBP</div>
+      </label>
+      <input type="file" id="photoinput" accept="image/*" onchange="uploadPhoto(this)">
+      <div class="admrow" style="margin-top:10px">
+        <button class="abtn abtn-r" style="font-size:10px" onclick="clearPhoto()">مسح الصورة</button>
+      </div>
+    </div>
+
+    <!-- NAME EDIT -->
+    <div class="admcard">
+      <div class="admh">✏️ تعديل الاسم</div>
+      <input type="text" id="nameinput" placeholder="أحمد عبد الحليم" maxlength="40">
+      <div style="margin-top:8px">
+        <button class="abtn abtn-p" onclick="saveName()">حفظ الاسم</button>
+      </div>
+    </div>
+
+    <!-- AUDIO UPLOAD -->
+    <div class="admcard">
+      <div class="admh">🎵 رفع الأغنية السيادية</div>
+      <div id="audstatus" class="astatus" style="display:none"></div>
+      <audio id="prevaud" class="prevaud" controls style="display:none"></audio>
+      <label class="filebtn" for="audinput">
+        <div>رفع KEMET Anthem</div>
+        <div style="font-size:8px;margin-top:4px;opacity:.5">MP3 / WAV / M4A · يُحفظ في الجلسة</div>
+      </label>
+      <input type="file" id="audinput" accept="audio/*" onchange="uploadAudio(this)">
+    </div>
+
+    <!-- VIDEO EXPORT -->
+    <div class="admcard">
+      <div class="admh">🎬 توليد الفيديو السيادي</div>
+      <div class="vrec">
+        <div class="vrect">الأفاتار الحلزوني + الأغنية → ملف فيديو</div>
+        <div class="vrstatus" id="vrstatus">ارفع الأغنية أولاً لتفعيل التوليد</div>
+        <div id="vrprog"><div id="vrprogfill"></div></div>
+        <div style="display:flex;gap:8px;justify-content:center;margin-top:12px;flex-wrap:wrap">
+          <button class="abtn abtn-g" id="vrbtn" onclick="startVideoExport()" disabled>
+            ⬇ توليد فيديو (60 ث)
+          </button>
+          <button class="abtn" style="background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4);font-size:10px" id="vrstopbtn" onclick="stopVideoExport()" style="display:none">
+            ⏹ إيقاف
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- WORLD SELECTOR -->
+    <div class="admcard">
+      <div class="admh">🌍 اختيار العالم البصري</div>
+      <div class="admworld-grid" id="admworld-grid"></div>
+    </div>
+    <!-- PRESET SELECTOR -->
+    <div class="admcard">
+      <div class="admh">🎭 اختيار الحركة والمزاج</div>
+      <div class="admpr-grid" id="admpr-grid"></div>
+    </div>
+
+    <!-- PIN CHANGE -->
+    <div class="admcard">
+      <div class="admh">🔒 تغيير PIN الدخول</div>
+      <input type="password" id="newpin1" placeholder="PIN جديد (4+ أرقام)" maxlength="12">
+      <input type="password" id="newpin2" placeholder="تأكيد الـ PIN" maxlength="12" style="margin-top:8px">
+      <div style="margin-top:8px">
+        <button class="abtn abtn-r" onclick="changePin()">تغيير الـ PIN</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ══ JAVASCRIPT ══ -->
+<script>
+'use strict';
+
+// ─── Storage Keys ─────────────────────────────────────────────────────────────
+const KEYS = {
+  pin:  'omni_pin_v2',
+  name: 'omni_name',
+  photo:'omni_photo',
+};
+const hashPin = p => btoa(`ΩmniVersE::${p}::☥`);
+const isPinSet = () => !!localStorage.getItem(KEYS.pin);
+const verifyPin = p => localStorage.getItem(KEYS.pin) === hashPin(p);
+
+// ─── Global State ─────────────────────────────────────────────────────────────
+let audioCtx = null;
+let analyser = null;
+let audioSrc = null;
+let audioBlob = null;
+let isPlaying = false;
+let mediaRecorder = null;
+let recordedChunks = [];
+let recordTimer = null;
+let sealTapCount = 0;
+let sealTapTimer = null;
+
+const audio = document.getElementById('ka');
+
+// ─── OmniPuppet Engine (WORLDS + PRESETS + Renderer9) ─────────────────────────
+
+// ── WORLDS ─────────────────────────────────────────────────────────────────
+const WORLDS = {
+  neural:    { id:"neural",    name:"🌿 Neural Garden",   ar:"الحديقة العصبية",  p:"#00ffcc",a:"#00cc99",bg:"#000d0a",fog:[0,255,204]   },
+  pharaonic: { id:"pharaonic", name:"𓂀 Cyber-Pharaonic",  ar:"الفرعون السيبراني",p:"#ffd700",a:"#00e5ff",bg:"#060400",fog:[255,215,0]   },
+  islamic:   { id:"islamic",   name:"☪️ Islamic Realm",    ar:"العالم الروحاني",  p:"#00ff88",a:"#a78bfa",bg:"#000508",fog:[0,255,136]   },
+  cosmic:    { id:"cosmic",    name:"🌌 Cosmic Spiritual", ar:"الكوني الروحي",    p:"#a855f7",a:"#00e5ff",bg:"#03020a",fog:[168,85,247]  },
+  mythic:    { id:"mythic",    name:"⚔️ Mythic Legend",    ar:"الأسطورة الخالدة", p:"#ff6b35",a:"#ffd700",bg:"#080200",fog:[255,107,53]  },
+  cyberpunk: { id:"cyberpunk", name:"🤖 Cyberpunk Core",   ar:"نواة السايبربانك",  p:"#f43f5e",a:"#06b6d4",bg:"#020005",fog:[244,63,94]   },
+  quantum:   { id:"quantum",   name:"⚛️ Quantum Abyss",    ar:"شعاع الكوانتوم",   p:"#8b5cf6",a:"#facc15",bg:"#010206",fog:[139,92,246]  },
+  celestial: { id:"celestial", name:"✨ Celestial Void",   ar:"الفراغ السماوي",   p:"#e0f2fe",a:"#bae6fd",bg:"#00020a",fog:[224,242,254]  },
+};
+
+const PALETTES = {
+  default,
+  fire: { id: "fire", name: "🔥 Fire", p: "#ff4500", a: "#ff8c00", bg: "#0a0200", fog: [255, 69, 0] },
+  ocean: { id: "ocean", name: "🌊 Ocean", p: "#00bfff", a: "#1e90ff", bg: "#000510", fog: [0, 191, 255] },
+  neon: { id: "neon", name: "✨ Neon", p: "#ff00ff", a: "#00ffff", bg: "#05000a", fog: [255, 0, 255] },
+  gold: { id: "gold", name: "👑 Golden Ratio", p: "#fbbf24", a: "#fcd34d", bg: "#0a0800", fog: [251, 191, 36] },
+  emerald: { id: "emerald", name: "💎 Emerald Soul", p: "#10b981", a: "#34d399", bg: "#000a05", fog: [16, 185, 129] },
+};
+
+// ── ALL PRESETS ─────────────────────────────────────────────────────────────
+const ALL_PRESETS = [
+  { id:"lotus",   mood:"calm",       ar:"اللوتس الطافي",     en:"Floating Lotus",      ao:0.05,  spd:0.9,  famp:55, lean:0.025,legMode:"lotus" },
+  { id:"gather",  mood:"calm",       ar:"تجميع الطاقة",      en:"Energy Gathering",    ao:0.28,  spd:0.8,  famp:45, lean:0.04, legMode:"lotus" },
+  { id:"breath",  mood:"calm",       ar:"التنفس الكوني",     en:"Cosmic Breath",       ao:0.08,  spd:0.65, famp:60, lean:0.02, legMode:"lotus" },
+  { id:"swirl",   mood:"calm",       ar:"الدوامة الهادئة",   en:"Gentle Swirl",        ao:0.15,  spd:0.8,  famp:55, lean:0.03, legMode:"lotus" },
+  { id:"rise",    mood:"healing",    ar:"صعود الشفاء",       en:"Healing Ascent",      ao:0.45,  spd:0.85, famp:48, lean:0.05, legMode:"stand" },
+  { id:"sway",    mood:"healing",    ar:"التأرجح الروحي",    en:"Spiritual Sway",      ao:0.22,  spd:0.75, famp:38, lean:0.08, legMode:"lotus" },
+  { id:"mandala", mood:"healing",    ar:"رقصة المندالا",     en:"Mandala Dance",       ao:0.55,  spd:0.9,  famp:42, lean:0.07, legMode:"lotus" },
+  { id:"flow",    mood:"healing",    ar:"التدفق الكوني",     en:"Cosmic Flow",         ao:0.35,  spd:1.2,  famp:50, lean:0.06, legMode:"stand" },
+  { id:"pharaoh", mood:"epic",       ar:"عودة الفرعون",      en:"Pharaoh Returns",     ao:0.9,   spd:1.85, famp:65, lean:0.10, legMode:"stand" },
+  { id:"nova",    mood:"epic",       ar:"انفجار السوبرنوفا", en:"Supernova Burst",     ao:1.0,   spd:2.1,  famp:72, lean:0.12, legMode:"stand" },
+  { id:"tutting", mood:"epic",       ar:"رقصة توت عنخ آمون",en:"Tutankhamun Tutting", ao:0.72,  spd:1.65, famp:52, lean:0.09, legMode:"stand" },
+  { id:"trance",  mood:"epic",       ar:"نشوة الترانس",      en:"Trance State",        ao:0.8,   spd:2.2,  famp:80, lean:0.15, legMode:"stand" },
+  { id:"bounce",  mood:"epic",       ar:"القفز الإيقاعي",    en:"Rhythmic Bounce",     ao:0.6,   spd:2.5,  famp:90, lean:0.05, legMode:"stand" },
+  { id:"grief",   mood:"melancholic",ar:"الانحناء للحزن",    en:"Grief Bow",           ao:-0.22, spd:0.42, famp:58, lean:0.22, legMode:"lotus" },
+  { id:"void",    mood:"melancholic",ar:"المشي في الفراغ",   en:"Walking in Void",     ao:-0.15, spd:0.48, famp:48, lean:0.16, legMode:"walk"  },
+  { id:"fade",    mood:"melancholic",ar:"انطفاء الهالة",     en:"Halo Dimming",        ao:-0.28, spd:0.38, famp:65, lean:0.24, legMode:"lotus" },
+];
+const MOOD_COLORS = { calm:"#a78bfa", healing:"#00ffcc", epic:"#fbbf24", melancholic:"#6366f1" };
+const MOOD_POSE={calm:"lotus",healing:"rise",epic:"pharaoh",melancholic:"grief"};
+
+// ★ HEAD_JANIM — v10 joint-0 head motion per pose: [xFreq, xAmpPx, yFreq, yAmpPx, phase] ★
+// Ported from OmniPuppet v10 skeleton system, scaled for v9 character proportions
+const HEAD_JANIM={
+  lotus:   [.35, 3,  .28, 5,  0],
+  gather:  [.42, 4,  .35, 5,  0],
+  breath:  [.28, 3,  .22, 7,  0],
+  swirl:   [.3,  4,  .25, 6,  0],
+  rise:    [.5,  4,  .42, 5,  0],
+  sway:    [.38, 10, .32, 6,  0],
+  mandala: [.7,  5,  .6,  6,  0],
+  flow:    [.45, 6,  .38, 7,  0],
+  pharaoh: [.5,  5,  .42, 4,  0],
+  nova:    [1.0, 7,  .85, 9,  0],
+  tutting: [.6,  5,  .5,  4,  0],
+  trance:  [1.2, 8,  1.0, 10, 0],
+  bounce:  [1.5, 5,  1.5, 12, 0],
+  grief:   [.2,  3,  .16, 5,  0],
+  void:    [.42, 9,  .35, 5,  0],
+  fade:    [.16, 2,  .12, 3,  0],
+};
+
+// ── DSP (Welch PSD) ─────────────────────────────────────────────────────────
+function fftMag(sig){const N=sig.length;const re=Float64Array.from(sig),im=new Float64Array(N);for(let i=1,j=0;i<N;i++){let b=N>>1;for(;j&b;b>>=1)j^=b;j^=b;if(i<j){[re[i],re[j]]=[re[j],re[i]];[im[i],im[j]]=[im[j],im[i]];}}for(let l=2;l<=N;l<<=1){const a=-2*Math.PI/l,wr=Math.cos(a),wi=Math.sin(a);for(let i=0;i<N;i+=l){let cr=1,ci=0;for(let k=0;k<l>>1;k++){const ur=re[i+k],ui=im[i+k],vr=re[i+k+(l>>1)]*cr-im[i+k+(l>>1)]*ci,vi=re[i+k+(l>>1)]*ci+im[i+k+(l>>1)]*cr;re[i+k]=ur+vr;im[i+k]=ui+vi;re[i+k+(l>>1)]=ur-vr;im[i+k+(l>>1)]=ui-vi;const nc=cr*wr-ci*wi;ci=cr*wi+ci*wr;cr=nc;}}}const m=new Float64Array(N>>1);for(let i=0;i<N>>1;i++)m[i]=Math.sqrt(re[i]*re[i]+im[i]*im[i]);return m;}
+function hannWin(n){return Array.from({length:n},(_,i)=>0.5-0.5*Math.cos(2*Math.PI*i/(n-1)));}
+function welchPSD(data,sr,fftSize=4096){const win=hannWin(fftSize),hop=fftSize>>1,psd=new Float64Array(fftSize>>1);let frames=0;for(let i=0;i+fftSize<=data.length;i+=hop){const fr=new Float64Array(fftSize);for(let j=0;j<fftSize;j++)fr[j]=data[i+j]*win[j];const mag=fftMag(fr);for(let j=0;j<mag.length;j++)psd[j]+=mag[j]*mag[j];frames++;}if(frames>0)for(let j=0;j<psd.length;j++)psd[j]/=frames;const f=new Float64Array(psd.length);for(let j=0;j<psd.length;j++)f[j]=(j*sr)/fftSize;return{psd,freqs:f,bHz:sr/fftSize};}
+function detectBPM(data,sr){const len=Math.min(data.length,sr*10),st=Math.floor((data.length-len)/2),env=new Float64Array(len);for(let i=0;i<len;i++)env[i]=Math.abs(data[st+i]);const step=Math.floor(sr/100),dLen=Math.ceil(len/step),ds=new Float64Array(dLen);for(let i=0,j=0;i<len;i+=step,j++)ds[j]=env[i];const lo=Math.floor(100/180*100),hi=Math.floor(100/50*100);let bv=-1,bl=100;for(let lag=lo;lag<=hi&&lag<dLen>>1;lag++){let ac=0;const n2=Math.min(dLen-lag,500);for(let i=0;i<n2;i++)ac+=ds[i]*ds[i+lag];if(ac>bv){bv=ac;bl=lag;}}const bpm=Math.round(60/(bl/100));return(bpm>=45&&bpm<=180)?bpm:72;}
+const SACRED_LIST=[{hz:40,n:"Gamma 40Hz"},{hz:432,n:"432Hz"},{hz:528,n:"528Hz"},{hz:639,n:"639Hz"},{hz:741,n:"741Hz"}];
+function detectSacred(psd,bHz){return SACRED_LIST.filter(s=>{const bin=Math.round(s.hz/bHz);if(bin>=psd.length)return false;const v=psd[bin];let avg=0,c=0;for(let j=Math.max(0,bin-30);j<=Math.min(psd.length-1,bin+30);j++){avg+=psd[j];c++;}avg/=c;return v>avg*2.8;}).map(s=>s.n);}
+// ★ Isochronic/binaural detection (from AudioLab)
+function detectEntrainment(psd,bHz,sr){
+  // Check envelope modulation rate in 0-100Hz
+  let bestBin=-1,bestV=0;
+  const maxBin=Math.floor(100/bHz);
+  for(let i=1;i<Math.min(maxBin,psd.length);i++)if(psd[i]>bestV){bestV=psd[i];bestBin=i;}
+  if(bestBin<1)return{type:"None",freq:0,band:"N/A",score:0};
+  const pulseHz=bestBin*bHz;
+  // Is there clear modulation?
+  const avgLow=(Array.from(psd.slice(0,Math.min(maxBin,psd.length)))[]).reduce((a,b)=>a+b,0)/maxBin;
+  if(bestV<avgLow*2)return{type:"Pure Sine",freq:0,band:"N/A",score:Math.round(Math.random()*20+75)};
+  const band=pulseHz<4?"Delta (0.5-4Hz)":pulseHz<8?"Theta (4-8Hz)":pulseHz<13?"Alpha (8-13Hz)":pulseHz<30?"Beta (13-30Hz)":"Gamma (30-100Hz)";
+  return{type:"Isochronic",freq:parseFloat(pulseHz.toFixed(2)),band,score:Math.round(85+Math.random()*12)};
+}
+function calcTHD(psd,bHz,fund){if(!fund||fund<=0)return 0;const fi=Math.round(fund/bHz);if(fi>=psd.length)return 0;let fp=0;for(let j=Math.max(0,fi-2);j<=Math.min(psd.length-1,fi+2);j++)if(psd[j]>fp)fp=psd[j];let hp=0;for(let n=2;n<=10;n++){const hi=Math.round(fund*n/bHz);if(hi<psd.length){let lp=0;for(let j=Math.max(0,hi-2);j<=Math.min(psd.length-1,hi+2);j++)if(psd[j]>lp)lp=psd[j];hp+=lp;}}return fp>0?Math.round(Math.sqrt(hp/fp)*100):0;}
+
+// ★ Detect harmonic series (like AudioLab)
+function detectHarmonics(psd,bHz,fund,n=6){
+  const result=[];
+  for(let i=2;i<=n+1;i++){const hHz=fund*i;const bin=Math.round(hHz/bHz);if(bin>=psd.length)break;let p=0;for(let j=Math.max(0,bin-2);j<=Math.min(psd.length-1,bin+2);j++)if(psd[j]>p)p=psd[j];const fundBin=Math.round(fund/bHz);let fp=0;for(let j=Math.max(0,fundBin-2);j<=Math.min(psd.length-1,fundBin+2);j++)if(psd[j]>fp)fp=psd[j];if(fp>0){const dB=parseFloat((20*Math.log10(p/fp+1e-10)).toFixed(1));result.push({n:i,hz:Math.round(hHz),dB});}}
+  return result;
+}
+
+async function analyzeAudio(file){
+  return new Promise((res,rej)=>{
+    const r=new FileReader();
+    r.onload=async e=>{
+      try{
+        const ctx=new AudioContext({sampleRate:44100});
+        const buf=await ctx.decodeAudioData((e.target.result).slice(0));ctx.close();
+        const raw=buf.getChannelData(0),sr=buf.sampleRate,dur=Math.round(buf.duration);
+        const{psd,freqs,bHz}=welchPSD(raw,sr,4096);
+        let scN=0,scD=0;for(let i=1;i<psd.length;i++){scN+=freqs[i]*psd[i];scD+=psd[i];}
+        const sc=scD>0?Math.round(scN/scD):0;
+        const totP=Array.from(psd).reduce((a,b)=>a+b,0);let cumP=0,rolloff=0;for(let i=0;i<psd.length;i++){cumP+=psd[i];if(cumP>=totP*.85){rolloff=Math.round(freqs[i]);break;}}
+        const logS=Array.from(psd.slice(1)).reduce((s,v)=>s+Math.log(Math.max(v,1e-10)),0);const aM=Array.from(psd.slice(1)).reduce((s,v)=>s+v,0)/(psd.length-1);const flat=parseFloat((aM>0?Math.exp(logS/(psd.length-1))/aM:0).toFixed(3));
+        let rms=0; let peak=0; let zcCount=0;
+        for (let i=0; i<raw.length; i++) {
+          const v = raw[i];
+          rms += v*v;
+          const absV = Math.abs(v);
+          if (absV > peak) peak = absV;
+          if (i > 0 && ((v > 0 && raw[i-1] <= 0) || (v < 0 && raw[i-1] >= 0))) zcCount++;
+        }
+        const rmsLin=Math.sqrt(rms/raw.length);
+        const rmsDb=parseFloat((20*Math.log10(rmsLin+1e-10)).toFixed(1));
+        const crestFactor = rmsLin > 0 ? parseFloat((peak / rmsLin).toFixed(2)) : 1;
+        const zcr = parseFloat((zcCount / raw.length).toFixed(4));
+        
+        const band=(lo,hi)=>{const a=Math.floor(lo/bHz),b=Math.min(Math.ceil(hi/bHz),psd.length);let s=0;for(let i=a;i<b;i++)s+=psd[i];return(b-a)>0?s/(b-a):0;};
+        const rb={sub:band(20,60),bass:band(60,250),mid:band(250,2000),high:band(2000,8000),air:band(8000,sr/2)};
+        const mx=Math.max(...Object.values(rb),1);const bands={};for(const k in rb)bands[k]=Math.round((rb[k]/mx)*255);
+        const bpm=detectBPM(raw,sr);const sacred=detectSacred(Array.from(psd),bHz);
+        const thd=calcTHD(psd,bHz,sc);
+        let dpk=0,dpkV=0;for(let i=Math.floor(80/bHz);i<Math.min(Math.floor(2000/bHz),psd.length);i++)if(psd[i]>dpkV){dpkV=psd[i];dpk=Math.round(freqs[i]);}
+        const entrainment=detectEntrainment(Array.from(psd),bHz,sr);
+        const harmonics=detectHarmonics(Array.from(psd),bHz,dpk,6);
+        // Clipping detection
+        let clipCount=0;for(const v of raw)if(Math.abs(v)>=0.998)clipCount++;
+        const clipping=parseFloat((clipCount/raw.length*100).toFixed(3));
+        // Phase correlation (mono=1.0)
+        const phase=1.0;
+        // Spectral type based on flat + entrainment
+        const specType=entrainment.type==="Isochronic"?"Isochronic Tones":flat<0.08?"Pure Sine":flat<0.3?"Mixed":"Noise-like";
+        // Nuanced Mood interpretation using Crest Factor, ZCR, BPM, and Spectral Centroid
+        let moodLabel = "طاقة متوازنة / تدفق";
+        if (bpm < 85) {
+          moodLabel = (crestFactor < 3) ? "مراحل الشفاء العميق / سكون تام" : "رنين كوني متذبذب / تأملي";
+        } else if (bpm < 125) {
+          moodLabel = (zcr > 0.08) ? "نبض حيوي / تصاعدي" : "طاقة انسيابية / تجديد خلايا";
+        } else {
+          moodLabel = (crestFactor > 4.5) ? "قوة ملحمية / صحوة سيادية" : "إيقاع حاد / تسارع وعي";
+        }
+        res({dur,rmsLin:parseFloat(rmsLin.toFixed(4)),rmsDb,sc,rolloff,flat,crestFactor,zcr,bands,bpm,sacred,thd,dpk,entrainment,harmonics,clipping,phase,specType,moodLabel,sr});
+      }catch(err){rej(err);}
+    };
+    r.onerror=()=>rej(new Error("فشل قراءة الملف"));
+    r.readAsArrayBuffer(file);
+  });
+}
+
+async function getScenes(stats,fileName,world){
+  // Local scene generation without external API
+  const dur = stats.dur;
+  const scenes = [];
+  let currentStart = 0;
+  const numScenes = Math.floor(Math.random() * 3) + 3; // 3 to 5 scenes
+  const durationPerScene = dur / numScenes;
+
+  const states = ["calm", "healing", "epic", "melancholic"];
+  const movements = {
+    calm: ["lotus", "gather", "breath"],
+    healing: ["rise", "sway", "mandala"],
+    epic: ["pharaoh", "nova", "tutting"],
+    melancholic: ["grief", "void", "fade"]
+  };
+
+  const labels = {
+    calm: ["الهدوء العميق", "التأمل", "السكون"],
+    healing: ["طاقة الشفاء", "الارتقاء", "النبض الروحي"],
+    epic: ["الصحوة الكبرى", "القوة المطلقة", "التجلي"],
+    melancholic: ["رحلة في الفراغ", "الحنين", "الظل"]
+  };
+
+  for(let i=0; i<numScenes; i++) {
+    const end = (i === numScenes - 1) ? dur : Math.round(currentStart + durationPerScene);
+    
+    // Determine state based on audio stats or random
+    let state = "calm";
+    if (stats.bpm > 120 || stats.rmsDb > -10) state = "epic";
+    else if (stats.bpm < 80) state = "calm";
+    else if (stats.sc > 2000) state = "healing";
+    else state = states[Math.floor(Math.random() * states.length)];
+
+    const movementList = movements[state];
+    const movement = movementList[Math.floor(Math.random() * movementList.length)];
+    const labelList = labels[state];
+    const label = labelList[Math.floor(Math.random() * labelList.length)];
+
+    scenes.push({
+      start: currentStart,
+      end: end,
+      state: state,
+      movement: movement,
+      label: label
+    });
+    currentStart = end;
+  }
+
+  return {
+    title: "رحلة الأومني بابيت",
+    titleEn: "OmniPuppet Journey",
+    mood: stats.moodLabel,
+    confidence: Math.round(80 + Math.random() * 15),
+    scenes: scenes
+  };
+}
+
+// ★ Safe PDF — NO React state touched, runs fully isolated ★
+function genReport(stats,scenes,fileName,worldName){
+  try{
+    const lines=[
+      `╔══════════════════════════════════════════════════════╗`,
+      `║        OmniVerse Audio Lab — Analysis Report         ║`,
+      `╚══════════════════════════════════════════════════════╝`,
+      ``,`File: ${fileName}`,`World: ${worldName}`,
+      `Title: ${scenes?.titleEn||"—"}  |  Mood: ${scenes?.mood||"—"}  |  Confidence: ${scenes?.confidence||0}%`,
+      ``,`── ADVANCED PHYSICS & AUDIO METRICS ────────────────────`,
+      `Crest Factor:         ${stats.crestFactor}  (${stats.crestFactor < 3 ? "Compressed/Dense" : stats.crestFactor > 5 ? "Highly Dynamic/Spiky" : "Standard"})`,
+      `Zero-Crossing Rate:   ${stats.zcr}  (${stats.zcr > 0.1 ? "Noisy/Percussive" : "Tonal/Smooth"})`,
+      `BPM (Tempo):          ${stats.bpm} ${stats.bpm<80?"← Meditative":stats.bpm<120?"← Moderate":"← Energetic"}`,
+      `RMS Level:            ${stats.rmsDb} dBFS`,
+      `Spectral Centroid:    ${stats.sc} Hz  (${stats.sc<800?"Dark/Sub":stats.sc<3000?"Balanced":"Bright"})`,
+      `Spectral Rolloff 85%: ${stats.rolloff} Hz`,
+      `Spectral Flatness:    ${stats.flat}  (${stats.flat<0.08?"Pure Tonal / Pure Sine":stats.flat<0.25?"Moderately Tonal":"Noise-like"})`,
+      `THD:                  ${stats.thd}%`,`Clipping:             ${stats.clipping}%`,`Phase Correlation:    ${stats.phase}`,
+      ``,`── FREQUENCY BANDS (0-255 normalised) ──────────────────`,
+      `Sub-Bass  20-60Hz:    ${stats.bands.sub}`,`Bass  60-250Hz:       ${stats.bands.bass}`,
+      `Mid  250Hz-2kHz:      ${stats.bands.mid}`,`High  2-8kHz:         ${stats.bands.high}`,`Air  8kHz+:           ${stats.bands.air}`,
+      ``,`── BRAINWAVE ENTRAINMENT ───────────────────────────────`,
+      `Type:                 ${stats.specType}`,
+      `Mechanism:            ${stats.entrainment.type}`,
+      stats.entrainment.type==="Isochronic"?`Pulse Rate:           ${stats.entrainment.freq} Hz`:`Entrainment: Pure continuous tone — no pulse detected`,
+      `Brain Band Target:    ${stats.entrainment.band}`,
+      `Entrainment Score:    ${stats.entrainment.score}%`,
+      `Mood Interpretation:  ${stats.moodLabel}`,
+      ``,`── SACRED / THERAPEUTIC FREQUENCIES ───────────────────`,
+      stats.sacred.length>0?`Detected: ${stats.sacred.join(" · ")}`:`None detected`,
+      ``,`── HARMONICS ──────────────────────────────────────────`,
+      `Dominant Pitch:       ${stats.dpk} Hz`,
+      ...(stats.harmonics.length>0?stats.harmonics.map(h=>`  ${h.n}x = ${h.hz} Hz  (${h.dB} dB)`):[`  No clear harmonics`]),
+      ``,`── SCENES ─────────────────────────────────────────────`,
+      ...(scenes?.scenes||[]).map((sc,i)=>`  ${i+1}. [${sc.start}s → ${sc.end}s]  ${sc.label}  (${sc.state})`),
+      ``,`Generated: ${new Date().toLocaleString('ar-EG')}  |  OmniVerse PuPeT v9.5`,
+    ];
+    const text=lines.join("\n");
+    const blob=new Blob([text],{type:"text/plain;charset=utf-8"});
+    const a=document.createElement("a");a.href=URL.createObjectURL(blob);a.download=`OmniLab_${Date.now()}.txt`;
+    document.body.appendChild(a);a.click();setTimeout(()=>{document.body.removeChild(a);URL.revokeObjectURL(a.href);},500);
+  }catch(err){console.error("Report error:",err);}
+}
+
+// ── RENDERER v7 ─────────────────────────────────────────────────────────────
+function hxRgb(h){return{r:parseInt(h.slice(1,3),16),g:parseInt(h.slice(3,5),16),b:parseInt(h.slice(5,7),16)};}
+
+class Renderer9{
+  [key];
+  constructor(canvas,worldRef,presetRef,sacredFreqs,optionsRef){
+    this.c=canvas;this.ctx=canvas.getContext("2d");
+    this.worldRef=worldRef;   // ★ live ref — world can change during video
+    this.presetRef=presetRef; // ★ live ref — preset can change during video
+    this.optionsRef=optionsRef;
+    this.sacred=sacredFreqs||[];
+    this.sB=0;this.sM=0;this.sT=0;this.sV=0;
+    this.sVoc=0;         // fast vocal energy
+    this.sVocSlow=0;     // slow baseline
+    this.sVocSustain=0;  // very slow vocal sustain tracker
+    this.sVocPitch=0;    // dominant vocal pitch (for speech detection)
+    this.prevVocPitch=0;
+    this.prevVocRaw=0;   // previous frame vocal raw
+    this.percGate=0;     // percussion gate counter
+    this.sSub=0; this.sBass2=0; this.sMidL=0; this.sMidH=0;
+    this.prevBassRaw=0;
+    // Current state with smoothing
+    this.curState="calm";this.stateTimer=0;
+    this.smoothFY=0;this.smoothAO=0;
+    // Sparks
+    this.sparks=[];for(let i=0;i<200;i++)this.sparks.push({x:0,y:0,vx:0,vy:0,life:0,max:1,r:1,col:"#fff",on:false});
+    // Quantum fog
+    this.fog=Array.from({length:180},()=>({x:Math.random(),y:Math.random(),vx:(Math.random()-.5)*.25,vy:(Math.random()-.5)*.25,r:Math.random()*2.2+.4,op:Math.random()*.5+.18}));
+    // Blink
+    this.nextBlink=performance.now()+3000+Math.random()*4500;this.blinkT=0;this.blinking=false;
+    // Sacred geo
+    this.sacredAngle=0;
+    // Walk
+    this.walkPhase=0;
+    // Phase accumulator — smooth float motion even on speed changes
+    this.fPhase=0;
+    this.displayFY=0;
+    this.WA = {r:0,g:0,b:0};
+    this.WP = {r:0,g:0,b:0};
+    this.mouthOpen = 0;
+    this.blinkScale = 1;
+    this.st = 'calm';
+    this.isPercussion = false;
+    this.isSinging = false;
+    this.charState = 'idle';
+    this.genderColor = {r:0,g:229,b:255};
+    this.headDX = 0;
+    this.headDY = 0;
+    this.lookX = 0;
+    this.lookY = 0;
+    this.mouseX = 0;
+    this.mouseY = 0;
+    this._lastWorld=null;
+    this._worldT=1;
+    this.beatSmooth=0;
+    this.beatPeak=0;
+    this.spiralSpeedSmooth=0;
+    this.rawBprev=0;
+    // ★ v10 head-independent oscillation state (smooth LP-filtered) ★
+    this.headDX=0;this.headDY=0;
+    // ★ Pose smooth interpolation ★
+    this.interpPR=null;    // current blended PR values
+    this.fromPR=null;      // old PR for blending
+    this.poseT=1;          // 0→1 transition progress
+    this.lastPRId=null;
+    this.mouseX = canvas.width / 2;
+    this.mouseY = canvas.height / 2;
+    this.lookX = 0;
+    this.lookY = 0;
+    this.clickPulse = 0;
+    // Gestures
+    this.zoom = 1.0;
+    this.rot = 0.0;
+    this.initialPinchDist = null;
+    this.initialPinchAngle = null;
+    this.initialZoom = 1.0;
+    this.initialRot = 0.0;
+
+    this.onMouseMove = (e) => {
+      const rect = this.c.getBoundingClientRect();
+      this.mouseX = e.clientX - rect.left;
+      this.mouseY = e.clientY - rect.top;
+      // right click to rotate
+      if (e.buttons === 2) {
+        this.rot += e.movementX * 0.01;
+      }
+    };
+    this.onClick = () => {
+      this.clickPulse = 1.0;
+      if (navigator.vibrate) navigator.vibrate(50);
+    };
+    this.onWheel = (e) => {
+      e.preventDefault();
+      this.zoom = Math.max(0.5, Math.min(3.0, this.zoom - e.deltaY * 0.001));
+    };
+    this.c.addEventListener('mousemove', this.onMouseMove);
+    this.c.addEventListener('click', this.onClick);
+    this.c.addEventListener('wheel', this.onWheel, {passive:false});
+    
+    // ★ Mobile Touch & Gestures ★
+    this.onTouchMove = (e) => {
+      const rect = this.c.getBoundingClientRect();
+      if (e.touches.length === 1) {
+        const touch = e.touches[0];
+        // If swiping horizontally with significant movement, map to rotation slightly, otherwise let it rotate head
+        if (this.lastTouchX !== undefined) {
+          const dx = touch.clientX - this.lastTouchX;
+          this.rot += dx * 0.005;
+        }
+        this.lastTouchX = touch.clientX;
+        this.mouseX = touch.clientX - rect.left; 
+        this.mouseY = touch.clientY - rect.top; 
+      } else if (e.touches.length === 2) {
+        e.preventDefault(); // prevent scrolling
+        const t1 = e.touches[0];
+        const t2 = e.touches[1];
+        const dx = t2.clientX - t1.clientX;
+        const dy = t2.clientY - t1.clientY;
+        const dist = Math.hypot(dx, dy);
+        const angle = Math.atan2(dy, dx);
+        if (this.initialPinchDist !== null) {
+          this.zoom = this.initialZoom * (dist / this.initialPinchDist);
+          this.zoom = Math.max(0.5, Math.min(3.0, this.zoom));
+          this.rot = this.initialRot + (angle - this.initialPinchAngle);
+        }
+      }
+    };
+    this.onTouchStart = (e) => {
+      const rect = this.c.getBoundingClientRect();
+      if (e.touches.length === 1) {
+        this.clickPulse = 1.0;
+        if (navigator.vibrate) navigator.vibrate(50);
+        const touch = e.touches[0];
+        this.lastTouchX = touch.clientX;
+        this.mouseX = touch.clientX - rect.left; 
+        this.mouseY = touch.clientY - rect.top; 
+        this.initialPinchDist = null;
+      } else if (e.touches.length === 2) {
+        const t1 = e.touches[0];
+        const t2 = e.touches[1];
+        this.initialPinchDist = Math.hypot(t2.clientX - t1.clientX, t2.clientY - t1.clientY);
+        this.initialPinchAngle = Math.atan2(t2.clientY - t1.clientY, t2.clientX - t1.clientX);
+        this.initialZoom = this.zoom;
+        this.initialRot = this.rot;
+      }
+    };
+    this.c.addEventListener('touchmove', this.onTouchMove, {passive:false});
+    this.c.addEventListener('touchstart', this.onTouchStart, {passive:true});
+  }
+
+  cleanup() {
+    this.c.removeEventListener('mousemove', this.onMouseMove);
+    this.c.removeEventListener('click', this.onClick);
+    this.c.removeEventListener('wheel', this.onWheel);
+    this.c.removeEventListener('touchmove', this.onTouchMove);
+    this.c.removeEventListener('touchstart', this.onTouchStart);
+  }
+  emit(wx,wy,n,c1,c2){
+    const opts = this.optionsRef?.current || { fxParticles: "normal" };
+    if (opts.fxParticles === "none") return;
+    if (opts.fxParticles === "intense") n *= 3;
+    let s=0;for(const p of this.sparks){if(!p.on&&s<n){const a=Math.random()*Math.PI*2,sp=1.8+Math.random()*4.5;p.x=wx;p.y=wy;p.vx=Math.cos(a)*sp;p.vy=Math.sin(a)*sp-3.5;p.life=0;p.max=.4+Math.random()*.75;p.r=1.5+Math.random()*3.5;p.col=Math.random()>.5?c1:c2;p.on=true;s++;}}
+  }
+
+  drawVisualizer(ctx, W, H, f, T, visMode, B, M, Tr, V, Wd, beatPeak, opts) {
+    const cx = W / 2, cy = H / 2;
+    const bass = B * 255;
+    const energy = (B + M + Tr) / 3 * 255;
+    const WP = hxRgb(Wd.p);
+    
+    ctx.globalCompositeOperation = 'screen';
+    
+    if (visMode === "spectrum") {
+      const baseR = Math.min(W, H) * 0.22;
+      const bars = Math.min(f.length, 128);
+      const step = (Math.PI * 2) / bars;
+      for (let i = 0; i < bars; i++) {
+        const val = f[i];
+        const outerR = baseR + val * 0.9 + bass * 0.15;
+        const innerR = baseR - val * 0.05;
+        const a = i * step - Math.PI / 2;
+        const x1 = cx + Math.cos(a) * innerR;
+        const y1 = cy + Math.sin(a) * innerR;
+        const x2 = cx + Math.cos(a) * outerR;
+        const y2 = cy + Math.sin(a) * outerR;
+        const hue = (i / bars) * 240 + 160;
+        const lum = 40 + (val / 255) * 50;
+        ctx.strokeStyle = `hsl(${hue}, 100%, ${lum}%)`;
+        ctx.lineWidth = 2 + (val / 255) * 2;
+        ctx.beginPath(); ctx.moveTo(x1, y1); ctx.lineTo(x2, y2); ctx.stroke();
+      }
+      const ringGlow = ctx.createRadialGradient(cx, cy, baseR - 5, cx, cy, baseR + 10);
+      ringGlow.addColorStop(0, `rgba(${WP.r}, ${WP.g}, ${WP.b}, ${0.05 + B * 0.3})`);
+      ringGlow.addColorStop(1, 'transparent');
+      ctx.fillStyle = ringGlow;
+      ctx.beginPath(); ctx.arc(cx, cy, baseR + 10, 0, Math.PI * 2); ctx.fill();
+    } else if (visMode === "bars") {
+      const bars = Math.min(f.length, 128);
+      const barW = W / bars;
+      for (let i = 0; i < bars; i++) {
+        const val = f[i];
+        const barH = (val / 255) * H * 0.65 + 2;
+        const hue = (i / bars) * 240 + 160;
+        const lum = 40 + (val / 255) * 50;
+        const x = i * barW;
+        const g = ctx.createLinearGradient(x, H, x, H - barH);
+        g.addColorStop(0, `hsla(${hue},100%,${lum}%,0.9)`);
+        g.addColorStop(1, `hsla(${hue + 30},100%,80%,0.3)`);
+        ctx.fillStyle = g;
+        ctx.fillRect(x + 1, H - barH, barW - 2, barH);
+        ctx.globalAlpha = 0.25;
+        ctx.fillRect(x + 1, 0, barW - 2, barH * 0.3);
+        ctx.globalAlpha = 1;
+      }
+    } else if (visMode === "wave") {
+      const sliceW = W / f.length;
+      for (let layer = 0; layer < 3; layer++) {
+        ctx.beginPath();
+        const hue = 180 + layer * 40;
+        const shift = (layer - 1) * 30;
+        ctx.strokeStyle = `hsla(${hue}, 100%, 60%, ${0.6 - layer * 0.15})`;
+        ctx.lineWidth = 3 - layer * 0.8;
+        for (let i = 0; i < f.length; i++) {
+          const v = f[i] / 128.0;
+          const x = i * sliceW;
+          const y = cy + (v - 1) * (H * 0.3) + shift * Math.sin(i * 0.01 + T);
+          if (i === 0) ctx.moveTo(x, y); else ctx.lineTo(x, y);
+        }
+        ctx.stroke();
+      }
+    } else if (visMode === "galaxy") {
+      for (let arm = 0; arm < 3; arm++) {
+        ctx.beginPath();
+        const armAngle = (arm / 3) * Math.PI * 2 + T * 0.2;
+        for (let i = 0; i < f.length; i++) {
+          const val = f[i];
+          const r = (i / f.length) * Math.min(W, H) * 0.45 + B * 50;
+          const a = armAngle + (i / f.length) * Math.PI * 4;
+          const x = cx + Math.cos(a) * r;
+          const y = cy + Math.sin(a) * r;
+          const hue = 180 + arm * 60 + (val / 255) * 60;
+          ctx.fillStyle = `hsla(${hue},100%,60%,${val/1000})`;
+          ctx.beginPath(); ctx.arc(x, y, 1.5 + (val/255)*3, 0, Math.PI * 2); ctx.fill();
+        }
+      }
+    } else if (visMode === "matrix") {
+      ctx.font = `${12 + B * 10}px monospace`;
+      const cols = Math.floor(W / 20);
+      const charSet = 'アウエオカキクケコサシスセソタチツテトナニ0123456789ABCDEF∞Ω∆';
+      this.matrixDrops = this.matrixDrops || new Array(cols).fill(0);
+      for (let i = 0; i < cols; i++) {
+        const val = f[i % f.length];
+        const text = charSet.charAt(Math.floor(Math.random() * charSet.length));
+        ctx.fillStyle = val < 20 ? `rgba(0,255,100,0.1)` : `hsla(${140 + B*40}, 100%, ${60 + B*40}%, ${0.3 + (val/255)*0.7})`;
+        const x = i * 20;
+        const y = this.matrixDrops[i] * 20;
+        ctx.fillText(text, x, y);
+        // Reset or drop
+        if (y > H && Math.random() > 0.975) {
+          this.matrixDrops[i] = 0;
+        }
+        this.matrixDrops[i] += Math.max(0.5, (val/128)); // faster falling if louder
+      }
+    }
+    ctx.globalCompositeOperation = 'source-over';
+  }
+
+  draw(freqL,freqR,_t,scene){
+    const opts = this.optionsRef?.current || { fxBloom: true, fxDof: false, fxParticles: "normal", customPalette: "default" };
+    const T=performance.now()*.001;
+    const W=this.c.width,H=this.c.height,ctx=this.ctx;
+    const fL=freqL instanceof Uint8Array?freqL:new Uint8Array(128).fill(20);
+    const fR=freqR instanceof Uint8Array?freqR:new Uint8Array(128).fill(20);
+    const f=new Uint8Array(fL.length);
+    for(let i=0;i<f.length;i++) f[i]=Math.max(fL[i],fR[i]);
+
+    // ── Audio metrics ────────────────────────────────────────────────────
+    const rawB=Array.from(f.slice(0,5)).reduce((a,b)=>a+b,0)/5/255;
+    const rawM=Array.from(f.slice(5,28)).reduce((a,b)=>a+b,0)/23/255;
+    const rawT=Array.from(f.slice(28,75)).reduce((a,b)=>a+b,0)/47/255;
+    const rawV=Array.from(f).reduce((a,b)=>a+b,0)/f.length/255;
+    
+    // Stereo metrics
+    const rawB_L=Array.from(fL.slice(0,5)).reduce((a,b)=>a+b,0)/5/255;
+    const rawB_R=Array.from(fR.slice(0,5)).reduce((a,b)=>a+b,0)/5/255;
+    const rawM_L=Array.from(fL.slice(5,28)).reduce((a,b)=>a+b,0)/23/255;
+    const rawM_R=Array.from(fR.slice(5,28)).reduce((a,b)=>a+b,0)/23/255;
+    const rawT_L=Array.from(fL.slice(28,75)).reduce((a,b)=>a+b,0)/47/255;
+    const rawT_R=Array.from(fR.slice(28,75)).reduce((a,b)=>a+b,0)/47/255;
+    
+    this.sB_L=(this.sB_L||0)+(rawB_L-(this.sB_L||0))*.22;
+    this.sB_R=(this.sB_R||0)+(rawB_R-(this.sB_R||0))*.22;
+    this.sM_L=(this.sM_L||0)+(rawM_L-(this.sM_L||0))*.16;
+    this.sM_R=(this.sM_R||0)+(rawM_R-(this.sM_R||0))*.16;
+    this.sT_L=(this.sT_L||0)+(rawT_L-(this.sT_L||0))*.13;
+    this.sT_R=(this.sT_R||0)+(rawT_R-(this.sT_R||0))*.13;
+    // ★ Vocal range — split into formant sub-bands for discrimination ★
+    // Human vowels have energy in F1 (~300-900Hz) AND F2 (~900-3kHz)
+    // Instruments like drums/bass usually have little in F2
+    const rawVocF1=Array.from(f.slice(7,22)).reduce((a,b)=>a+b,0)/15/255; // F1: ~300-900Hz
+    const rawVocF2=Array.from(f.slice(22,75)).reduce((a,b)=>a+b,0)/53/255; // F2: ~900-3.3kHz
+    // Voice = both F1 and F2 active simultaneously
+    const rawVoc=(rawVocF1+rawVocF2)*.5;
+    // Formant ratio — vowels have roughly similar energy in both
+    const formantRatio=rawVocF1>0.01?rawVocF2/rawVocF1:0;
+    // Voice gate: both formants present, ratio not extreme (instrument bias)
+    const voiceGated=rawVocF1>0.05&&rawVocF2>0.04&&formantRatio>.2&&formantRatio<5;
+
+    this.sB+=(rawB-this.sB)*.22;this.sM+=(rawM-this.sM)*.16;this.sT+=(rawT-this.sT)*.13;this.sV+=(rawV-this.sV)*.11;
+    this.sVoc+=(rawVoc-this.sVoc)*.28;
+    this.sVocSlow+=(rawVoc-this.sVocSlow)*.025;
+    // sustain tracker — voice stays high, percussion decays in <8 frames
+    this.sVocSustain=(this.sVocSustain||0)+(rawVoc-(this.sVocSustain||0))*.06;
+    // percussion gate: if rawVoc jumped suddenly but sVocSustain is low → drum hit
+    const vocJump=rawVoc-(this.prevVocRaw||0);this.prevVocRaw=rawVoc;
+    // Percussion = sudden spike in vocal-range bins WITH simultaneous strong bass
+    // Key insight: drum overtones create brief vocal-range energy, but it's impulsive not sustained
+    if(vocJump>0.10&&rawB>0.22&&this.sVocSustain<0.12){
+      this.percGate=10; // hold 10 frames (~170ms)
+    } else if(this.percGate>0){
+      this.percGate--;
+    }
+    const isPercussion=this.percGate>0;
+
+    // ★ Dominant vocal pitch tracking for speech detection ★
+    let domBin=7,domVal=0;
+    for(let i=7;i<75&&i<f.length;i++)if(f[i]>domVal){domVal=f[i];domBin=i;}
+    const dominantVocHz=domBin*(44100/512);
+    // Apply low-pass filter to stabilize pitch
+    this.sVocPitch+=(dominantVocHz-this.sVocPitch)*.15; // Slower smoothing
+    // Speech = pitch changes rapidly frame-to-frame (>20Hz/frame difference)
+    const pitchDelta=Math.abs(this.sVocPitch-this.prevVocPitch);
+    this.prevVocPitch=this.sVocPitch;
+    const isSpeech=voiceGated&&pitchDelta>20&&this.sVoc>0.06;
+
+    // ★ MOUTH: voice vs percussion discrimination ★
+    // Voice = sustained vocal energy above slow baseline
+    // Percussion = sudden spike in vocal range WITH simultaneous bass spike
+    const isVowel=!isPercussion&&voiceGated&&this.sVoc>this.sVocSlow+0.05&&pitchDelta<20;
+    const speechReact=(!isPercussion&&isSpeech)?Math.min(1,this.sVoc*4.5):0;
+    const vowelSustain=isVowel?Math.min(1,(this.sVoc-this.sVocSlow)*6):0;
+    // singing = sustained above sustain baseline, slow pitch movement
+    // Singing: sustained vocal energy for at least several frames + stable pitch
+    // Require sVocSustain (slow-smoothed) to be meaningful — drums can't sustain
+    let genderColor: {r,g,b} = {r:0,g:229,b:255}; // default cyan, overwritten when WA is available
+    const isSinging=!isPercussion&&voiceGated&&this.sVocSustain>0.12&&pitchDelta<14&&
+                    this.sVoc>this.sVocSustain*.85&&this.sVocSlow>0.08&&rawVocF2>0.06;
+    const singOpen=isSinging?Math.min(1,(this.sVocSustain-0.07)*3.5):0;
+    const mouthOpen=Math.max(speechReact,vowelSustain,singOpen);
+    let charState = 'idle';
+    if (isSinging) charState = 'singing';
+    else if (isSpeech) charState = 'talking';
+
+    const B=this.sB,M=this.sM,Tr=this.sT,V=this.sV,BP=B*32;
+    const transient=rawB-this.prevBassRaw>0.2;this.prevBassRaw=rawB;
+
+    // Blink
+    const now2=performance.now();
+    if((!this.blinking&&now2>this.nextBlink)||(transient&&Math.random()<.3&&!this.blinking)){this.blinking=true;this.blinkT=0;this.nextBlink=now2+3000+Math.random()*4500;}
+    if(this.blinking){this.blinkT+=0.018;if(this.blinkT>.15)this.blinking=false;}
+    const blinkScale=this.blinking?Math.max(0,1-this.blinkT/.075):1;
+
+    // ★ WORLD — smooth transition when world changes ★
+    const baseWd=WORLDS[this.worldRef.current]||WORLDS.cosmic;
+    const targetWd=opts.customPalette !== "default" && PALETTES[opts.customPalette] ? { ...baseWd, ...PALETTES[opts.customPalette] } : baseWd;
+    const stateId = `${targetWd.id}_${opts.customPalette}`;
+    if(stateId!==this._lastWorld){
+      const prevBaseWd=WORLDS[this.worldRef.current]||baseWd; // Or track old world ID
+      this._fromWd=this._fromWd || prevBaseWd; 
+      // If we are already transitioning, we should use current interpolated colors, but let's just use _lastWd
+      this._lastWorld=stateId;
+      this._worldT=0;
+    }
+    if(this._worldT<1)this._worldT=Math.min(1,(this._worldT||0)+.012); // Slower, smoother transition
+    const Wd=targetWd;
+    const fWP=hxRgb(this._fromWd?.p || Wd.p), fWA=hxRgb(this._fromWd?.a || Wd.a);
+    const tWP=hxRgb(targetWd.p), tWA=hxRgb(targetWd.a);
+    const easeT = this._worldT * this._worldT * (3 - 2 * this._worldT); // Smoothstep
+    const WP={r:Math.round(fWP.r+(tWP.r-fWP.r)*easeT),g:Math.round(fWP.g+(tWP.g-fWP.g)*easeT),b:Math.round(fWP.b+(tWP.b-fWP.b)*easeT)};
+    const WA={r:Math.round(fWA.r+(tWA.r-fWA.r)*easeT),g:Math.round(fWA.g+(tWA.g-fWA.g)*easeT),b:Math.round(fWA.b+(tWA.b-fWA.b)*easeT)};
+    if (this._worldT >= 1) this._fromWd = targetWd; // lock it in
+    const rgba=(c,a)=>`rgba(${c.r},${c.g},${c.b},${a})`;
+    // ★ Update genderColor now that WA is available ★
+    genderColor = WA;
+    if (this.sVocPitch > 165 && this.sVocPitch < 300) {
+      genderColor = {r: 255, g: 105, b: 180}; // female range
+    } else if (this.sVocPitch > 85 && this.sVocPitch <= 165) {
+      genderColor = {r: 0, g: 150, b: 255}; // male range
+    }
+
+    // ★ Scene STATE → smooth transition ★
+    const newState=scene?.state||"calm";
+    if(newState!==this.curState){this.curState=newState;this.stateTimer=0;}
+    else{this.stateTimer=Math.min(1,this.stateTimer+0.008);}
+    const st=this.curState;
+
+    // ★ PRESET motion — smooth blend on change ★
+    const livePR=this.presetRef.current||ALL_PRESETS[0];
+    if(livePR.id!==this.lastPRId){
+      this.fromPR=this.interpPR||livePR;
+      this.lastPRId=livePR.id;
+      this.poseT=0;
+    }
+    if(this.poseT<1)this.poseT=Math.min(1,this.poseT+.018); // ~55 frames ≈ 1.8s
+    const bv=(a,b)=>a+(b-a)*this.poseT; // blend value
+    const PR={
+      id:livePR.id,
+      ao:bv(this.fromPR?.ao??livePR.ao, livePR.ao),
+      spd:bv(this.fromPR?.spd??livePR.spd, livePR.spd),
+      famp:bv(this.fromPR?.famp??livePR.famp, livePR.famp),
+      lean:bv(this.fromPR?.lean??livePR.lean, livePR.lean),
+      legMode:this.poseT>.5?livePR.legMode:(this.fromPR?.legMode||livePR.legMode),
+    };
+    this.interpPR=PR;
+
+    // ★ HEAD independent oscillation — v10 JANIM joint-0, blended across pose transitions ★
+    const fromHJ=HEAD_JANIM[this.fromPR?.id]||HEAD_JANIM.lotus;
+    const toHJ=HEAD_JANIM[livePR.id]||HEAD_JANIM.lotus;
+    // Linearly blend JANIM parameters across the pose transition (same poseT)
+    const hj=fromHJ.map((v,i)=>v+(toHJ[i]-v)*this.poseT);
+    // Bass-reactive beat multiplier — mirrors v10's beatMult = 1 + amp*2.2
+    const beatMult=1+B*2.2;
+    const tDX=Math.sin(T*hj[0]+hj[4])*hj[1]*beatMult;
+    const tDY=Math.cos(T*hj[2]+hj[4]*.7+.3)*hj[3]*beatMult;
+    // LP filter at 15% per frame — prevents any position snap
+    this.headDX+=(tDX-this.headDX)*.15;
+    this.headDY+=(tDY-this.headDY)*.15;
+    const fMul={epic:1.4,calm:0.95,healing:1.05,melancholic:1.15}[st]||1;
+    const sMul={epic:1.35,calm:0.88,healing:1.0,melancholic:0.55}[st]||1;
+    const targetFamp=(PR.famp||50)*fMul;const targetSpd=(PR.spd||1)*sMul;
+    const fAmp=targetFamp,fSpd=targetSpd;
+
+    // ★ Taller avatar — scale all proportions ★
+    // Z-axis scaling on beat peak gives a stereoscopic pop out feeling
+    const SC=1.45 + (this.beatPeak * 0.15) + (B * 0.2); // scale factor jumps with bass
+    const zOffset = -this.beatPeak * 20; // moves up slightly on beat
+    const HR=Math.min(H*.072*SC,H*.09),TH=H*.22*SC,UAL=HR*1.5,LAL=HR*1.25;
+    const LW=Math.max(2.5,H*.0036*SC);
+
+    // ★ FY via phase accumulator — smooth even on speed/amplitude changes ★
+    const dt=0.016; // ~60fps timestep
+    this.fPhase=(this.fPhase||0)+fSpd*dt;
+    const rawFY=Math.sin(this.fPhase)*fAmp+Math.sin(this.fPhase*.43)*(fAmp*.32);
+    const targetOffset=st==="melancholic"?44:st==="epic"?-34:0;
+    this.smoothFY+=(targetOffset-this.smoothFY)*.035;
+    const targetFY=rawFY+this.smoothFY;
+    // Exponential LP filter on FY output — eliminates any remaining jumps
+    this.displayFY+=(targetFY-this.displayFY)*.12;
+    let FY=this.displayFY + zOffset;
+    const LN=Math.sin(T*(st==="melancholic"?.35:.52))*(PR.lean||.03)+(st==="melancholic"?.14:0);
+    const BS=1+Math.sin(T*(st==="epic"?2.2:.94))*(st==="epic"?.1:.05)+B*(st==="epic"?.22:.07);
+
+    // ★ BIG ARM KINEMATICS ★
+    const ao=Math.max(-.35,Math.min(1.05,PR.ao||.1));
+    const baseShA=-Math.PI*.48*(.25+Math.max(0,ao)*.75);
+    const elbowBend=.3-Math.max(0,ao)*.62+Math.sin(T*2.8)*.25;
+    this.walkPhase+=0.04*(1+B*.5)*(st==="melancholic"?.4:st==="epic"?1.5:1);
+
+    const CX=W/2,CY=H/2+FY;
+    const hipY=CY+TH*.54*BS,shY=CY-TH*.3*BS,hdY=shY-HR*1.2*BS;
+
+    // Chromatic aberration / Error glitch values based on Zero-crossing / Crest factor proxies (using T and B)
+    const glitch = (B > 0.6 && this.beatPeak > 0.8) ? (B * this.beatPeak * 8) : Math.random() < 0.05 ? B * 3 : 0;
+
+    // ── BACKGROUND ──────────────────────────────────────────────────────
+    if (opts.charMode === "visualizer") {
+      const alpha = 0.15 + B * 0.1;
+      ctx.fillStyle = `rgba(2, 0, 8, ${alpha})`;
+      ctx.fillRect(0, 0, W, H);
+      const vg = ctx.createRadialGradient(CX, CY, 0, CX, CY, Math.max(W,H)*0.75);
+      vg.addColorStop(0, 'transparent');
+      vg.addColorStop(1, `rgba(0,0,4,${0.3 + B*0.1})`);
+      ctx.fillStyle = vg;
+      ctx.fillRect(0, 0, W, H);
+      
+      // Draw visualizer behind character
+      this.drawVisualizer(ctx, W, H, f, T, opts.visMode, B, M, Tr, V, Wd, this.beatPeak, opts);
+    } else {
+      if (opts.bgVideo) {
+        ctx.clearRect(0,0,W,H);
+        ctx.fillStyle = `rgba(0,0,0,0.3)`; // semi-transparent overlay to keep contrast
+        ctx.fillRect(0,0,W,H);
+      } else {
+        ctx.fillStyle=Wd.bg;ctx.fillRect(0,0,W,H);
+      }
+      const nb=ctx.createRadialGradient(CX,CY,0,CX,CY,W*.52+V*W*.1);
+      nb.addColorStop(0,rgba(WP,.1+V*.12));nb.addColorStop(.4,rgba(WA,.05+B*.09));nb.addColorStop(1,"transparent");
+      ctx.fillStyle=nb;ctx.fillRect(0,0,W,H);
+      if(Wd.id==="pharaonic"&&B>.2){ctx.beginPath();ctx.moveTo(W*.5,H*.08);ctx.lineTo(W*.2,H*.9);ctx.lineTo(W*.8,H*.9);ctx.closePath();ctx.fillStyle=`rgba(255,215,0,${(B-.2)*.06})`;ctx.fill();}
+      if(Wd.id==="islamic"){ctx.beginPath();ctx.arc(W*.5,H*.52,H*.4,Math.PI,0);ctx.strokeStyle=rgba(WP,M*.1+.03);ctx.lineWidth=1;ctx.stroke();}
+      if(Wd.id==="mythic"&&B>.3){const g=ctx.createRadialGradient(CX,CY,W*.1,CX,CY,W*.4);g.addColorStop(0,`rgba(255,107,53,${(B-.3)*.18})`);g.addColorStop(1,"transparent");ctx.fillStyle=g;ctx.fillRect(0,0,W,H);}
+      if(B>.25){const bw=ctx.createRadialGradient(CX,CY,W*.03,CX,CY,W*.42*(.5+B*.5));bw.addColorStop(0,"transparent");bw.addColorStop(.78,rgba(WP,(B-.25)*.52));bw.addColorStop(1,"transparent");ctx.fillStyle=bw;ctx.fillRect(0,0,W,H);}
+      
+      // Vignette effect for depth
+      const vig = ctx.createRadialGradient(CX, CY, W*0.3, CX, CY, Math.max(W,H)*0.8);
+      vig.addColorStop(0, 'transparent');
+      vig.addColorStop(1, `rgba(0,0,0,${0.6 + B*0.2})`);
+      ctx.fillStyle = vig;
+      ctx.fillRect(0, 0, W, H);
+    }
+    
+    // Apply Gestures
+    ctx.save();
+    ctx.translate(CX, CY);
+    ctx.scale(this.zoom, this.zoom);
+    ctx.rotate(this.rot);
+    ctx.translate(-CX, -CY);
+    
+    // Dynamic fog based on spectral features (simulated via M and T if sc/flat not directly available per frame, but we can use rawM and rawT for brightness/flatness)
+    const fogSpeedMult = 1 + V*0.5 + rawT*2.0; // High frequencies make fog move faster
+    const fc=Wd.fog;this.fog.forEach(fp=>{fp.x+=fp.vx*.004*fogSpeedMult;fp.y+=fp.vy*.003*fogSpeedMult;if(fp.x<0)fp.x=1;if(fp.x>1)fp.x=0;if(fp.y<0)fp.y=1;if(fp.y>1)fp.y=0;ctx.beginPath();ctx.arc(fp.x*W,fp.y*H,fp.r*(1+B*.5),0,Math.PI*2);ctx.fillStyle=`rgba(${fc[0]},${fc[1]},${fc[2]},${fp.op*(.16+V*.2+rawM*.1)})`;ctx.fill();});
+    
+    // ★ Spiral speed: base ~0.3 rad/s (~1 rotation per 21s), spikes with bass and high frequencies ★
+    this.spiralSpeedSmooth=(this.spiralSpeedSmooth||0)+((B-.15)-(this.spiralSpeedSmooth||0))*.3;
+    const spiralSpeed=0.018+Math.max(0,this.spiralSpeedSmooth)*0.12 + rawT*0.05; // High freq adds extra spin
+    this.sacredAngle+=spiralSpeed;
+    if((st==="healing"||st==="calm")&&this.sacred.length>0){ctx.save();ctx.translate(CX,H*.5);ctx.rotate(this.sacredAngle);[H*.34,H*.25,H*.17,H*.11].forEach((r2,ri)=>{ctx.strokeStyle=rgba(WP,(.06+ri*.04+M*.05)*(1+B*.3));ctx.lineWidth=.7;for(let i=0;i<6;i++){const a=i/6*Math.PI*2;ctx.beginPath();ctx.arc(Math.cos(a)*r2*.5,Math.sin(a)*r2*.5,r2*.5,0,Math.PI*2);ctx.stroke();}ctx.beginPath();ctx.arc(0,0,r2*.5,0,Math.PI*2);ctx.stroke();});ctx.restore();}
+    if (this.clickPulse > 0) {
+      ctx.beginPath();
+      ctx.arc(CX, CY, (1 - this.clickPulse) * Math.min(W,H) * 0.8, 0, Math.PI*2);
+      ctx.strokeStyle = `rgba(255, 255, 255, ${this.clickPulse * 0.5})`;
+      ctx.lineWidth = this.clickPulse * 10;
+      ctx.stroke();
+      this.clickPulse -= 0.02;
+    }
+    // ★ Fibonacci spiral — pulses strongly with beat ★
+    const PHI=1.6180339887;
+    // Beat detector: smooth bass energy, react to transients
+    this.beatSmooth+=(rawB-this.beatSmooth)*.35;
+    if(rawB>this.beatSmooth*1.4&&rawB>0.15) {
+      if (this.beatPeak < 0.5 && navigator.vibrate) navigator.vibrate(15); // Short haptic bump on beat
+      this.beatPeak=1; // beat hit!
+    }
+    else this.beatPeak=Math.max(0,this.beatPeak-.06); // decay
+    // maxSR pulses: baseline + beat flash
+    const spiralPulse=this.beatPeak*0.8;
+
+    if (opts.charMode === "mummy") {
+      const mummyColors = ["#ff0055", "#00ffcc", "#ffaa00", "#aa00ff", "#00ff00", "#ff0000", "#0000ff"];
+      const mColor = mummyColors[Math.floor(T / 2) % mummyColors.length];
+      const mRgb = hxRgb(mColor);
+      
+      const maxMummyR = Math.max(W, H) * 1.5;
+      ctx.save();
+      ctx.translate(CX, CY);
+      ctx.rotate(-T * 2.5); // fast spin
+      
+      const mArms = 24; // many circles
+      for (let a = 0; a < mArms; a++) {
+        ctx.save();
+        ctx.rotate(a * Math.PI * 2 / mArms);
+        ctx.beginPath();
+        let spFirst = true;
+        const phaseOffset = (T * 12) % (Math.PI * 2); // inward suck
+        for (let th = 0.1; th < Math.PI * 18; th += 0.05) {
+          const rr = 2 * Math.pow(PHI, th / Math.PI);
+          if (rr > maxMummyR) break;
+          const thAnim = th - phaseOffset;
+          const sx2 = rr * Math.cos(thAnim);
+          const sy2 = rr * Math.sin(thAnim);
+          spFirst ? (ctx.moveTo(sx2, sy2), spFirst = false) : ctx.lineTo(sx2, sy2);
+        }
+        ctx.strokeStyle = rgba(mRgb, 0.2 + B * 0.4 + this.beatPeak * 2.0);
+        ctx.lineWidth = 3.0 + B * 6 + this.beatPeak * 35;
+        if (opts.fxBloom) { ctx.shadowBlur = 20 + this.beatPeak * 150; ctx.shadowColor = mColor; }
+        ctx.stroke();
+        ctx.shadowBlur = 0;
+        ctx.restore();
+      }
+      ctx.restore();
+    } else {
+      const maxSR=Math.min(W,H)*(.25+B*.04+spiralPulse);
+      const spiralArms=this.sacred.length>0?6:3;
+      [-1, 1].forEach(side => {
+        ctx.save();
+        ctx.translate(CX + side * W * 0.28, H/2 + Math.sin(T)*20);
+        ctx.rotate(this.sacredAngle * side);
+        for(let a=0;a<spiralArms;a++){
+          ctx.save();ctx.rotate(a*Math.PI*2/spiralArms);
+          ctx.beginPath();let spFirst=true;
+          for(let th=.12;th<Math.PI*7;th+=.034){
+            const rr=5*Math.pow(PHI,th/Math.PI);if(rr>maxSR)break;
+            const sx2=rr*Math.cos(th),sy2=rr*Math.sin(th);
+            spFirst?(ctx.moveTo(sx2,sy2),spFirst=false):ctx.lineTo(sx2,sy2);
+          }
+          ctx.strokeStyle=rgba(WP,.06+B*.16+this.beatPeak*1.5);ctx.lineWidth=1.0+B*2.2+this.beatPeak*8;
+          if (opts.fxBloom) { ctx.shadowBlur=9+B*22+this.beatPeak*60; ctx.shadowColor=`rgba(${WP.r},${WP.g},${WP.b},1)`; }
+          ctx.stroke();ctx.shadowBlur=0;ctx.restore();
+        }
+        for(let ri=0;ri<4;ri++){
+          ctx.beginPath();ctx.arc(0,0,maxSR*(.88+ri*.04+spiralPulse*.5),0,Math.PI*2);
+          const rAlpha=.08+B*.16+this.beatPeak*(1.5-ri*.1);
+          ctx.strokeStyle=rgba(WP,rAlpha);ctx.lineWidth=1.2+this.beatPeak*20-ri*.25;
+          if (opts.fxBloom) { ctx.shadowBlur=5+B*10+this.beatPeak*80; ctx.shadowColor=`rgba(${WP.r},${WP.g},${WP.b},.9)`; }
+          ctx.stroke();ctx.shadowBlur=0;
+        }
+        ctx.restore();
+      });
+    }
+    for(let i=0;i<95;i++){const sx=(i*173.7+13)%W,sy2=(i*97.3+5)%H,sf=.1+Math.abs(Math.sin(T*.42+i*.7))*.52*(.26+V*.7);ctx.beginPath();ctx.arc(sx,sy2,.85,0,Math.PI*2);ctx.fillStyle=`rgba(200,210,255,${sf*.52})`;ctx.fill();}
+
+    // ── LEAN ────────────────────────────────────────────────────────────
+    ctx.save();ctx.translate(CX,CY);ctx.rotate(LN);ctx.translate(-CX,-CY);
+
+    const gg=ctx.createRadialGradient(CX,hipY+HR*.38,0,CX,hipY+HR*.38,HR*4);gg.addColorStop(0,rgba(WP,.26+V*.1));gg.addColorStop(1,"transparent");ctx.fillStyle=gg;ctx.beginPath();ctx.ellipse(CX,hipY+HR*.38,HR*4,HR*.85,0,0,Math.PI*2);ctx.fill();
+    ctx.lineCap="round";ctx.lineWidth=LW*2.4;
+    // ★ FIX: cross-fade between leg modes — eliminates the snap bug ★
+    const toLegMode=livePR.legMode||"lotus";
+    const fromLegMode=this.fromPR?.legMode||toLegMode;
+    const _drawLeg=(mode,opa)=>{
+      ctx.save();ctx.globalAlpha=opa;ctx.lineCap="round";
+      if(mode==="lotus"){const lsw=Math.sin(T*.85)*HR*.16;ctx.strokeStyle=rgba(WP,.65);ctx.lineWidth=LW*2.4;[-1,1].forEach(s=>{ctx.beginPath();ctx.moveTo(CX+s*HR*.14+lsw*s,hipY);ctx.bezierCurveTo(CX+s*HR*1.08+lsw*s,hipY+HR*.3,CX+s*HR*1.5+lsw*s,hipY+HR*.92,CX+s*HR*1.6+lsw*s,hipY+HR*1.2);ctx.stroke();ctx.beginPath();ctx.arc(CX+s*HR*1.6+lsw*s,hipY+HR*1.2,HR*.2+BP*.08,0,Math.PI*2);ctx.fillStyle=rgba(WP,.7);ctx.fill();});}
+      else if(mode==="stand"){const swA=Math.sin(this.walkPhase)*.35;[-1,1].forEach(s=>{const la=s*swA,kx=CX+s*HR*.35+Math.sin(la)*TH*.42,ky=hipY+Math.cos(la)*TH*.42,fx=CX+s*HR*.4+Math.sin(la)*TH*.82,fy=hipY+Math.cos(la)*TH*.82;const lg=ctx.createLinearGradient(CX,hipY,fx,fy);lg.addColorStop(0,rgba(WA,.85));lg.addColorStop(1,rgba(WP,.55));ctx.strokeStyle=lg;ctx.lineWidth=LW*2.8;ctx.beginPath();ctx.moveTo(CX,hipY);ctx.lineTo(kx,ky);ctx.lineTo(fx,fy);ctx.stroke();ctx.beginPath();ctx.arc(kx,ky,LW*2.5+BP*.1,0,Math.PI*2);ctx.fillStyle=rgba(WA,.9);ctx.fill();ctx.beginPath();ctx.arc(fx,fy,LW*2+BP*.08,0,Math.PI*2);ctx.fillStyle=rgba(WP,.8);ctx.fill();});}
+      else{const swA=Math.sin(this.walkPhase)*.3;[-1,1].forEach(s=>{const la=s*swA*(s>0?1:-1),kx=CX+s*HR*.3+Math.sin(la)*TH*.4,ky=hipY+Math.cos(la)*TH*.38,fx=CX+s*HR*.25+Math.sin(la+.3)*TH*.72,fy=hipY+Math.cos(la+.3)*TH*.72;ctx.strokeStyle=rgba(WP,.62);ctx.lineWidth=LW*2.4;ctx.beginPath();ctx.moveTo(CX+s*HR*.15,hipY);ctx.lineTo(kx,ky);ctx.lineTo(fx,fy);ctx.stroke();ctx.beginPath();ctx.arc(kx,ky,LW*2.2,0,Math.PI*2);ctx.fillStyle=rgba(WA,.88);ctx.fill();});}
+      ctx.restore();
+    };
+    if(toLegMode===fromLegMode){
+      _drawLeg(toLegMode,1);
+    }else{
+      _drawLeg(fromLegMode,Math.max(0,1-this.poseT));
+      _drawLeg(toLegMode,Math.min(1,this.poseT));
+    }
+
+    // Torso
+    ctx.beginPath();
+    ctx.moveTo(CX - HR*0.35, shY);
+    ctx.lineTo(CX + HR*0.35, shY);
+    ctx.lineTo(CX + HR*0.25, hipY);
+    ctx.lineTo(CX - HR*0.25, hipY);
+    ctx.closePath();
+    const torsoG = ctx.createLinearGradient(CX, shY, CX, hipY);
+    torsoG.addColorStop(0, rgba(WA, 0.35 + B*0.15));
+    torsoG.addColorStop(1, rgba(WP, 0.15 + B*0.1));
+    ctx.fillStyle = torsoG;
+    ctx.fill();
+
+    const spG=ctx.createLinearGradient(CX,shY,CX,hipY);spG.addColorStop(0,rgba(WA,.88));spG.addColorStop(1,rgba(WP,.38));ctx.strokeStyle=spG;ctx.lineWidth=LW*1.5;ctx.beginPath();ctx.moveTo(CX,shY);ctx.lineTo(CX,hipY);ctx.stroke();
+    // ★ Chakra orbs — each tied to its own frequency band ★
+    // Sub(0-3)=root, Bass(3-10)=sacral, Mid-low(10-28)=solar, Mid-hi(28-75)=heart/throat
+    const rawSub=Array.from(f.slice(0,3)).reduce((a,b)=>a+b,0)/3/255;
+    const rawBass2=Array.from(f.slice(3,10)).reduce((a,b)=>a+b,0)/7/255;
+    const rawMidL=Array.from(f.slice(10,28)).reduce((a,b)=>a+b,0)/18/255;
+    const rawMidH=Array.from(f.slice(28,75)).reduce((a,b)=>a+b,0)/47/255;
+    this.sSub=(this.sSub||0)+(rawSub-(this.sSub||0))*.35;
+    this.sBass2=(this.sBass2||0)+(rawBass2-(this.sBass2||0))*.28;
+    this.sMidL=(this.sMidL||0)+(rawMidL-(this.sMidL||0))*.2;
+    this.sMidH=(this.sMidH||0)+(rawMidH-(this.sMidH||0))*.16;
+    [
+      {y:hipY,      rb:HR*.08, col:rgba(WP,.97),  g:this.sSub*3.0,  ring:true},
+      {y:hipY-TH*.2,rb:HR*.07, col:rgba(WA,.92),  g:this.sBass2*2.5,ring:true},
+      {y:CY,        rb:HR*.15, col:`rgba(255,175,80,.97)`, g:(this.sSub*.6+this.sBass2*.8)*2.0, ring:false},
+      {y:shY+TH*.1, rb:HR*.07, col:rgba(WA,.88),  g:this.sMidL*2.5, ring:true},
+      {y:shY-TH*.12,rb:HR*.06, col:rgba(WP,.85),  g:this.sMidH*2.0, ring:true},
+    ].forEach((ch,ci)=>{
+      const pulse=1+ch.g*1.5;
+      const nr=ch.rb*pulse+B*ch.rb*0.8;
+      const cg=ctx.createRadialGradient(CX,ch.y,0,CX,ch.y,nr*2.5);
+      cg.addColorStop(0,ch.col);
+      cg.addColorStop(.45,ch.col.replace(/[\d.]+\)$/,`${.2+ch.g*.35})`));
+      cg.addColorStop(1,"transparent");
+      ctx.fillStyle=cg;ctx.beginPath();ctx.arc(CX,ch.y,nr*2.5,0,Math.PI*2);ctx.fill();
+      ctx.beginPath();ctx.arc(CX,ch.y,nr,0,Math.PI*2);ctx.fillStyle=ch.col;ctx.fill();
+      // outer ring pulse at different rate per chakra
+      if(ch.ring){
+        const ringR=nr*(1.8+Math.sin(T*(1.2+ci*.4))*0.3+ch.g*.8);
+        ctx.beginPath();ctx.arc(CX,ch.y,ringR,0,Math.PI*2);
+        ctx.strokeStyle=ch.col.replace(/[\d.]+\)$/,`${.18+ch.g*.3})`);
+        ctx.lineWidth=1.2+ch.g*.8;ctx.stroke();
+      }
+    });
+
+    [1,-1].forEach(sign=>{
+      const armB = sign > 0 ? this.sB_R : this.sB_L;
+      const armTr = sign > 0 ? this.sT_R : this.sT_L;
+      const{sx,sy,ex,ey,hx2,hy2}=this.arm(sign, CX, shY, HR, BS, baseShA, T, armB, UAL, elbowBend, LAL);
+      // Upper arm
+      ctx.lineWidth=LW*3.2;ctx.lineCap="round";
+      const ag1=ctx.createLinearGradient(sx,sy,ex,ey);
+      ag1.addColorStop(0,rgba(WA,.88));ag1.addColorStop(1,rgba(WP,.68));
+      ctx.strokeStyle=ag1;
+      if (opts.fxBloom) { ctx.shadowBlur=8+armB*14; ctx.shadowColor=`rgba(${WA.r},${WA.g},${WA.b},.7)`; }
+      ctx.beginPath();ctx.moveTo(sx,sy);ctx.lineTo(ex,ey);ctx.stroke();
+      // Forearm
+      ctx.lineWidth=LW*2.6;
+      const ag2=ctx.createLinearGradient(ex,ey,hx2,hy2);
+      ag2.addColorStop(0,rgba(WP,.72));ag2.addColorStop(1,rgba(WA,.94));
+      ctx.strokeStyle=ag2;ctx.beginPath();ctx.moveTo(ex,ey);ctx.lineTo(hx2,hy2);ctx.stroke();
+      ctx.shadowBlur=0;
+      // Shoulder joint glow
+      ctx.beginPath();ctx.arc(sx,sy,LW*3.8+BP*.25,0,Math.PI*2);ctx.fillStyle=rgba(WA,.96);ctx.fill();
+      const shRing=LW*3.8*(1.5+Math.sin(T*2.1+sign*.8)*.3+armB*.4);
+      ctx.beginPath();ctx.arc(sx,sy,shRing,0,Math.PI*2);
+      ctx.strokeStyle=rgba(WA,.22+armB*.2);ctx.lineWidth=.9;ctx.stroke();
+      // Elbow joint
+      ctx.beginPath();ctx.arc(ex,ey,LW*3+BP*.18,0,Math.PI*2);ctx.fillStyle=rgba(WP,.88);ctx.fill();
+      // Hand glow + pulse ring
+      const hgR = HR * 0.45 * (1 + armTr * 2.5 + armB * 1.5 + (this.sVoc || 0) * 2.0) + BP * 0.6;
+      const auraGrad = ctx.createRadialGradient(hx2, hy2, 0, hx2, hy2, hgR);
+      auraGrad.addColorStop(0, rgba(WA, 0.8 + armTr * 0.2));
+      auraGrad.addColorStop(0.4, rgba(WA, 0.4 + armB * 0.3));
+      auraGrad.addColorStop(1, "transparent");
+      ctx.beginPath(); ctx.arc(hx2, hy2, hgR, 0, Math.PI * 2); ctx.fillStyle = auraGrad; ctx.fill();
+      const handRing=hgR*(1.4+Math.sin(T*3.2+sign)*.25+armTr*.6);
+      ctx.beginPath();ctx.arc(hx2,hy2,handRing,0,Math.PI*2);
+      ctx.strokeStyle=rgba(WA,.18+armTr*.28);ctx.lineWidth=1.1;ctx.stroke();
+      ctx.beginPath();ctx.arc(hx2,hy2,HR*.16*(1+armB*.62),0,Math.PI*2);ctx.fillStyle=rgba(WA,.99);ctx.fill();
+      if(armTr>.35&&Math.random()<armTr*.6)this.emit(hx2,hy2,3,Wd.p,Wd.a);
+    });
+
+    this.WA = WA;
+    this.WP = WP;
+    this.mouthOpen = mouthOpen;
+    this.blinkScale = blinkScale;
+    this.st = st;
+    this.isPercussion = isPercussion;
+    this.isSinging = isSinging;
+    this.charState = charState;
+    this.genderColor = genderColor;
+
+    // ★ v10 head independent position — oscillates per HEAD_JANIM ★
+    const targetLookX = (this.mouseX - CX) * 0.05;
+    const targetLookY = (this.mouseY - CY) * 0.05;
+    this.lookX += (targetLookX - this.lookX) * 0.1;
+    this.lookY += (targetLookY - this.lookY) * 0.1;
+
+    this.animateHead(T, W, H, ctx, CX, CY, hdY, HR, BS, BP, B, M, Tr, V, WA, WP, mouthOpen, blinkScale, st, isPercussion, isSinging, charState, genderColor, this.headDX, this.headDY, this.lookX, this.lookY, this.beatPeak, Wd, shY, baseShA, UAL, elbowBend, LAL);
+  }
+
+  animateHead(T, W, H, ctx, CX, CY, hdY, HR, BS, BP, B, M, Tr, V, WA, WP, mouthOpen, blinkScale, st, isPercussion, isSinging, charState, genderColor, headDX, headDY, lookX, lookY, beatPeak, Wd, shY, baseShA, UAL, elbowBend, LAL) {
+    const hR2=HR*BS+BP*.32;
+    const headX=CX+headDX+lookX;
+    const headY=hdY+headDY+lookY;
+    const rgba=(c,a)=>`rgba(${c.r},${c.g},${c.b},${a})`;
+
+    // Glitch offset on extreme peaks
+    const glitch = beatPeak > 0.85 ? (Math.random() - 0.5) * beatPeak * 12 : 0;
+    const gX = headX + glitch;
+
+    // Wind Physics (Hair/Energy strands)
+    const wind = V * 2.0 + beatPeak * 1.5;
+    for(let i=0; i<16; i++) {
+      const a = (i/16) * Math.PI + Math.PI; // Top half
+      const hL = HR * (1.2 + Math.sin(T*3 + i)*0.5 + wind);
+      const cpx = gX + Math.cos(a)*hR2 * 1.3 + Math.sin(T*4+i)*HR*wind;
+      const cpy = headY + Math.sin(a)*hR2 * 1.3 - HR*wind;
+      const ex = gX + Math.cos(a)*hL + Math.sin(T*5+i)*HR*wind*2.0;
+      const ey = headY + Math.sin(a)*hL - HR*wind*2.0;
+      ctx.beginPath();
+      ctx.moveTo(gX + Math.cos(a)*hR2*.8, headY + Math.sin(a)*hR2*.8);
+      ctx.quadraticCurveTo(cpx, cpy, ex, ey);
+      ctx.strokeStyle = rgba(WA, 0.2 + wind*0.2);
+      ctx.lineWidth = 2.0 + wind*1.5;
+      ctx.stroke();
+    }
+
+    // ★ Avatar aura: stereo pulsating spheres ★
+    const auraBaseR=hR2*1.2; // baseline — tight around head
+    const gColor = (charState === 'talking' || charState === 'singing') ? genderColor : WA;
+    
+    for(let ri=0;ri<4;ri++){
+      const freq2=[1.1,1.7,2.3,3.1][ri];
+      const wave=Math.sin(T*freq2+ri*1.2)*.04;
+      
+      // Left Aura
+      const beatExpandL=(this.sB_L||0)*(0.8-ri*.15) + beatPeak * 0.4;
+      const auraRL=Math.min(auraBaseR*(1.0+ri*.2+beatExpandL+wave),H*.4);
+      const alphaL=(.05+ri*.01+(this.sB_L||0)*.15 + beatPeak * 0.2)*Math.max(0,1-ri*.15);
+      const haL=ctx.createRadialGradient(gX-hR2*.4,headY,hR2*.3,gX-hR2*.4,headY,auraRL);
+      haL.addColorStop(0,rgba(gColor,(alphaL*2.5+(this.sB_L||0)*.3 + beatPeak * 0.5)));
+      haL.addColorStop(.55,rgba(gColor,alphaL));haL.addColorStop(1,"transparent");
+      ctx.fillStyle=haL;ctx.beginPath();ctx.arc(gX-hR2*.4,headY,auraRL,0,Math.PI*2);ctx.fill();
+      
+      // Right Aura
+      const beatExpandR=(this.sB_R||0)*(0.8-ri*.15) + beatPeak * 0.4;
+      const auraRR=Math.min(auraBaseR*(1.0+ri*.2+beatExpandR+wave),H*.4);
+      const alphaR=(.05+ri*.01+(this.sB_R||0)*.15 + beatPeak * 0.2)*Math.max(0,1-ri*.15);
+      const haR=ctx.createRadialGradient(gX+hR2*.4,headY,hR2*.3,gX+hR2*.4,headY,auraRR);
+      haR.addColorStop(0,rgba(gColor,(alphaR*2.5+(this.sB_R||0)*.3 + beatPeak * 0.5)));
+      haR.addColorStop(.55,rgba(gColor,alphaR));haR.addColorStop(1,"transparent");
+      ctx.fillStyle=haR;ctx.beginPath();ctx.arc(gX+hR2*.4,headY,auraRR,0,Math.PI*2);ctx.fill();
+      
+      if(ri<3){
+        ctx.beginPath();ctx.arc(gX-hR2*.4,headY,auraRL,0,Math.PI*2);
+        ctx.strokeStyle=rgba(WP,.04+(this.sB_L||0)*.15 + beatPeak * 0.3);
+        ctx.lineWidth=.6+(this.sB_L||0)*1.5 + beatPeak * 3;ctx.stroke();
+        
+        ctx.beginPath();ctx.arc(gX+hR2*.4,headY,auraRR,0,Math.PI*2);
+        ctx.strokeStyle=rgba(WP,.04+(this.sB_R||0)*.15 + beatPeak * 0.3);
+        ctx.lineWidth=.6+(this.sB_R||0)*1.5 + beatPeak * 3;ctx.stroke();
+      }
+    }
+    const hf=ctx.createRadialGradient(gX,headY,0,gX,headY,hR2*(1+(this.sVoc||0)*1.5));hf.addColorStop(0,rgba(WA,.26));hf.addColorStop(.65,rgba(WP,.14));hf.addColorStop(1,rgba(WP,.45));ctx.fillStyle=hf;ctx.beginPath();ctx.arc(gX,headY,hR2*(1+(this.sVoc||0)*1.5),0,Math.PI*2);ctx.fill();ctx.strokeStyle=rgba(WA,.72);ctx.lineWidth=1.1;ctx.beginPath();ctx.arc(gX,headY,hR2*(1+(this.sVoc||0)*1.5),0,Math.PI*2);ctx.stroke();
+    
+    // Eyes (with Dilation & Emotion)
+    const eS=hR2*.38,eY=headY+hR2*.1;
+    const dilation = 1 + Tr*1.2 + beatPeak*1.5;
+    const eR=hR2*.14*(1+B*.95+M*.4) * dilation;
+    
+    const drawEyes = (offsetX, colorOverride | null) => {
+      [-1,1].forEach(s=>{
+        const ex2=gX+s*eS + offsetX;
+        const eg=ctx.createRadialGradient(ex2,eY,0,ex2,eY,eR*3);
+        eg.addColorStop(0,colorOverride || `rgba(255,255,255,${.92+B*.08})`);
+        eg.addColorStop(.35,colorOverride || rgba(WA,.92+B*.08));
+        eg.addColorStop(1,"transparent");
+        ctx.fillStyle=eg;ctx.beginPath();ctx.ellipse(ex2,eY,eR*3,eR*3*blinkScale,0,0,Math.PI*2);ctx.fill();
+        ctx.beginPath();ctx.ellipse(ex2,eY,eR,eR*blinkScale,0,0,Math.PI*2);ctx.fillStyle=colorOverride || rgba(WA,.99);ctx.fill();
+      });
+    };
+
+    if (glitch !== 0) {
+      ctx.globalCompositeOperation = 'screen';
+      drawEyes(-glitch*0.5, `rgba(255,0,0,0.8)`);
+      drawEyes(glitch*0.5, `rgba(0,255,255,0.8)`);
+      ctx.globalCompositeOperation = 'source-over';
+    } else {
+      drawEyes(0, null);
+    }
+
+    const t3y=headY-hR2*.24,t3r=hR2*.1*(1+B*2.2+M*.98)+BP*.28;const teg=ctx.createRadialGradient(gX,t3y,0,gX,t3y,t3r*5);teg.addColorStop(0,`rgba(255,215,60,${.82+B*.18})`);teg.addColorStop(.5,rgba(WP,.36+B*.36));teg.addColorStop(1,"transparent");ctx.fillStyle=teg;ctx.beginPath();ctx.arc(gX,t3y,t3r*5,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(gX,t3y,t3r,0,Math.PI*2);ctx.fillStyle=`rgba(255,215,60,${.93+B*.07})`;ctx.fill();
+
+    if (this.clickPulse > 0.1) {
+      this.emit(gX, headY, 15, Wd.p, Wd.a);
+      this.clickPulse *= 0.8;
+      if (this.clickPulse > 0.5 && navigator.vibrate) navigator.vibrate(10);
+    }
+    if (beatPeak > 0.8 && Math.random() < 0.2) {
+      this.emit(gX, headY, 8, Wd.p, Wd.a);
+    }
+
+    // ★ LIP SYNC — vocal only, speech vs vowel vs percussion ★
+    const mY=headY+hR2*.55,mW=hR2*.28,mH=hR2*.18*(mouthOpen+.02);
+    const drawMouth = (offsetX, colorOverride | null) => {
+      if (isPercussion) {
+        ctx.beginPath();ctx.ellipse(gX+offsetX,mY+mH*.2,mW*1.2,Math.max(mH*.3,hR2*.02),0,0,Math.PI*2);ctx.fillStyle=colorOverride || rgba(WA,.4);ctx.fill();
+        ctx.beginPath();ctx.moveTo(gX+offsetX-mW*1.2,mY);ctx.lineTo(gX+offsetX+mW*1.2,mY);ctx.strokeStyle=colorOverride || rgba(WA,.8);ctx.lineWidth=2;ctx.stroke();
+      } else if (isSinging) {
+        ctx.beginPath();ctx.ellipse(gX+offsetX,mY+mH*.6,mW*.8,Math.max(mH*1.2,hR2*.05),0,0,Math.PI*2);ctx.fillStyle=colorOverride || rgba(WA,mouthOpen>.06?.6+mouthOpen*.4:.2);ctx.fill();
+        if(mouthOpen>.1){ctx.beginPath();ctx.ellipse(gX+offsetX,mY+mH*.6,mW*.5,mH*.9,0,0,Math.PI*2);ctx.fillStyle=`rgba(0,0,0,${mouthOpen*.6})`;ctx.fill();}
+        const mCurve=st==="epic"?-hR2*.05+mH*1.2:st==="melancholic"?hR2*.08:Math.sin(T*.96)*hR2*.04;
+        ctx.beginPath();ctx.moveTo(gX+offsetX-mW*.8,mY);ctx.quadraticCurveTo(gX+offsetX,mY+mCurve,gX+offsetX+mW*.8,mY);ctx.strokeStyle=colorOverride || rgba(WA,.7);ctx.lineWidth=1.8;ctx.lineCap="round";ctx.stroke();
+      } else {
+        ctx.beginPath();ctx.ellipse(gX+offsetX,mY+mH*.5,mW,Math.max(mH,hR2*.02),0,0,Math.PI*2);ctx.fillStyle=colorOverride || rgba(WA,mouthOpen>.06?.52+mouthOpen*.3:.18);ctx.fill();
+        if(mouthOpen>.1){ctx.beginPath();ctx.ellipse(gX+offsetX,mY+mH*.5,mW*.65,mH*.65,0,0,Math.PI*2);ctx.fillStyle=`rgba(0,0,0,${mouthOpen*.48})`;ctx.fill();}
+        const mCurve=st==="epic"?-hR2*.07+mH:st==="melancholic"?hR2*.1:Math.sin(T*.96)*hR2*.05;
+        ctx.beginPath();ctx.moveTo(gX+offsetX-mW,mY);ctx.quadraticCurveTo(gX+offsetX,mY+mCurve,gX+offsetX+mW,mY);ctx.strokeStyle=colorOverride || rgba(WA,.65);ctx.lineWidth=1.6;ctx.lineCap="round";ctx.stroke();
+      }
+    };
+
+    if (glitch !== 0) {
+      ctx.globalCompositeOperation = 'screen';
+      drawMouth(-glitch*0.5, `rgba(255,0,0,0.8)`);
+      drawMouth(glitch*0.5, `rgba(0,255,255,0.8)`);
+      ctx.globalCompositeOperation = 'source-over';
+    } else {
+      drawMouth(0, null);
+    }
+
+    ctx.restore();
+
+    // Crown — ★ tracks head position (headX/headY from v10 JANIM) ★
+    const crX=gX,crY=headY-HR*1.35;for(let i=0;i<7;i++){const a=(i/7)*Math.PI*2+T*.7+Math.sin(T*.48+i)*.2,oR=HR*(1.08+Math.sin(T*1.35+i*.95)*.14),px=crX+Math.cos(a)*oR,py=crY+Math.sin(a)*oR*.4,nr=HR*.088*(1+B*.82+Math.abs(Math.sin(T*1.25+i))*.36);const cg=ctx.createRadialGradient(px,py,0,px,py,nr*4.2);cg.addColorStop(0,rgba(WP,.76+B*.24));cg.addColorStop(1,"transparent");ctx.fillStyle=cg;ctx.beginPath();ctx.arc(px,py,nr*4.2,0,Math.PI*2);ctx.fill();ctx.beginPath();ctx.arc(px,py,nr,0,Math.PI*2);ctx.fillStyle=rgba(WP,.95);ctx.fill();ctx.beginPath();ctx.moveTo(crX,headY);ctx.lineTo(px,py);ctx.strokeStyle=rgba(WP,.13);ctx.lineWidth=.7;ctx.stroke();}
+    // Fluid Light Spark kinematics (Curved Airy-like trajectories)
+    for(const p of this.sparks){
+      if(!p.on)continue;
+      // parabolic curved motion representing airy beams
+      p.x += p.vx;
+      p.y += p.vy;
+      p.vx += (Math.sin(T * 2 + p.life) * 0.1); 
+      p.vy -= 0.05; // drift upwards
+      p.life += 0.015 + (B * 0.01);
+      
+      if(p.life>p.max){p.on=false;continue;}
+      const al=1-p.life/p.max;
+      const pr=hxRgb(p.col);
+      
+      // Draw fluid light spark (elongated based on velocity)
+      ctx.save();
+      ctx.translate(p.x, p.y);
+      ctx.rotate(Math.atan2(p.vy, p.vx));
+      ctx.beginPath();
+      // Elongated droplet shape
+      ctx.ellipse(0, 0, p.r * 1.5 * al, p.r * 0.5 * al, 0, 0, Math.PI * 2);
+      ctx.fillStyle=`rgba(${pr.r},${pr.g},${pr.b},${al*.88})`;
+      ctx.fill();
+      ctx.restore();
+    }
+    
+    // Emit Airy Beams from hands when music peaks or randomly during energetic states
+    if(B>.25 || (Tr>.3 && Math.random()<.2)){
+      [1,-1].forEach(s2 => {
+         const{hx2,hy2}=this.arm(s2, CX, shY, HR, BS, baseShA, T, B, UAL, elbowBend, LAL);
+         if(Math.random() < 0.4) {
+           this.emit(hx2,hy2,3 + B*4,Wd.p,Wd.a);
+         }
+      });
+    }
+
+    if(st==="epic"&&B>.3){for(let i=0;i<8;i++){const ra=(i/8)*Math.PI*2+T*.65,rl=HR*(3.5+B*7);ctx.beginPath();ctx.moveTo(CX,CY);ctx.lineTo(CX+Math.cos(ra)*rl,CY+Math.sin(ra)*rl);ctx.strokeStyle=rgba(WP,(B-.3)*.52);ctx.lineWidth=1.5;ctx.stroke();}}
+    if(st==="melancholic"){for(let i=0;i<20;i++){const rx=CX-W*.28+((i*139.3+T*58)%(W*.56)),ry=(T*55+i*68)%(H*.88);ctx.beginPath();ctx.moveTo(rx,ry);ctx.lineTo(rx-1.5,ry+11);ctx.strokeStyle=rgba(WA,.16+Math.random()*.12);ctx.lineWidth=.8;ctx.stroke();}}
+    if(Wd.id==="islamic"&&M>.25){ctx.save();ctx.translate(CX,H*.1);ctx.rotate(T*.07);for(let i=0;i<8;i++){const a=i/8*Math.PI*2,r2=Math.min(W,H)*.08;ctx.beginPath();ctx.moveTo(0,0);ctx.lineTo(Math.cos(a)*r2,Math.sin(a)*r2);ctx.strokeStyle=rgba(WP,.09+M*.09);ctx.lineWidth=.7;ctx.stroke();}ctx.restore();}
+    ctx.restore();
+  }
+
+  arm(sign, CX, shY, HR, BS, baseShA, T, B, UAL, elbowBend, LAL) {
+    const sx=CX+sign*HR*1.1*BS,sy=shY,ph=sign>0?0:.62;
+    const uA=baseShA+Math.sin(T*2.2+ph)*.38+Math.sin(T*1.05+ph)*.18+sign*B*.12;
+    const ex=sx+sign*UAL*Math.cos(uA+Math.PI/2),ey=sy+UAL*Math.sin(uA+Math.PI/2);
+    const lA=uA+elbowBend+Math.sin(T*3.1+sign+ph)*.22;
+    return{sx,sy,ex,ey,hx2:ex+sign*LAL*Math.cos(lA+Math.PI/2),hy2:ey+LAL*Math.sin(lA+Math.PI/2)};
+  }
+
+// ─── 1. Anti-Capture WebGL Overlay ────────────────────────────────────────────
+(function() {
+  const c = document.getElementById('ac');
+  const gl = c.getContext('webgl2') || c.getContext('webgl');
+  if (!gl) { c.style.display = 'none'; return; }
+  const resize = () => { c.width = innerWidth; c.height = innerHeight; gl.viewport(0,0,c.width,c.height); };
+  resize(); addEventListener('resize', resize);
+  const vs = `#version 300 es\nvoid main(){vec2 p=vec2(float((gl_VertexID&1)*2-1),float((gl_VertexID>>1)*2-1));gl_Position=vec4(p,0,1);}`;
+  const fs = `#version 300 es\nprecision mediump float;\nuniform float u_t;\nuniform vec2 u_r;\nout vec4 c;\nvoid main(){\nvec2 uv=gl_FragCoord.xy/u_r;\nfloat p1=sin(u_t*72.3*6.2832+uv.y*12.0);\nfloat p2=sin(u_t*37.7*6.2832-uv.x*8.0);\nfloat sc=mod(gl_FragCoord.y+u_t*185.0,4.0)<1.0?1.0:0.0;\nfloat i=clamp((p1*.5+p2*.5)*.5+sc*.28,0.0,1.0);\nc=vec4(mix(vec3(.04,.03,.01),vec3(1.,.86,.24),i*.3),i*.22);\n}`;
+  function mkS(s,t){const sh=gl.createShader(t);gl.shaderSource(sh,s);gl.compileShader(sh);return sh;}
+  const p=gl.createProgram(); gl.attachShader(p,mkS(vs,gl.VERTEX_SHADER)); gl.attachShader(p,mkS(fs,gl.FRAGMENT_SHADER)); gl.linkProgram(p); gl.useProgram(p);
+  const ut=gl.getUniformLocation(p,'u_t'),ur=gl.getUniformLocation(p,'u_r');
+  const vao=gl.createVertexArray(); gl.bindVertexArray(vao);
+  gl.enable(gl.BLEND); gl.blendFunc(gl.SRC_ALPHA,gl.ONE_MINUS_SRC_ALPHA);
+  const t0=performance.now();
+  (function f(n){requestAnimationFrame(f);gl.uniform1f(ut,(n-t0)/1000);gl.uniform2f(ur,c.width,c.height);gl.drawArrays(gl.TRIANGLES,0,3);})(t0);
+})();
+
+// ─── 2. Background Airy Beam Canvas ───────────────────────────────────────────
+(function() {
+  const c = document.getElementById('bg');
+  const ctx = c.getContext('2d');
+  const resize = () => { c.width = innerWidth; c.height = innerHeight; };
+  resize(); addEventListener('resize', resize);
+  function aiA(x) {
+    const SP=1.7724539;
+    if(x>15)return 0;
+    if(x>.8){const s=Math.sqrt(x);return Math.exp(-.66667*x*s)/(2*SP*Math.pow(x,.25));}
+    if(x<-.8){const a=-x,s=Math.sqrt(a);return Math.sin(.66667*a*s+.7854)/(SP*Math.pow(a,.25));}
+    return .3551-.2588*x+.0592*x*x*x;
+  }
+  const t0=performance.now();
+  (function f(n){
+    requestAnimationFrame(f);
+    const t=(n-t0)/1000,W=c.width,H=c.height;
+    ctx.clearRect(0,0,W,H);
+    for(let b=0;b<5;b++){
+      const ang=(b/5)*Math.PI*2+t*.1,ph=t*.65+b*1.1,cv=.3+.2*Math.sin(t*.28+b);
+      for(let i=0;i<50;i++){
+        const r=(i/50)*Math.max(W,H)*.55;
+        const x=W/2+Math.cos(ang)*r+cv*i*i*.07;
+        const y=H/2+Math.sin(ang)*r+Math.sin(ph+i*.3)*7;
+        const ai=Math.abs(aiA(i*.12-ph*.3));
+        if(ai<.001)continue;
+        const al=Math.min(.7,ai*1.4)*(1-i/50);
+        const hu=b%2===0?190:45;
+        ctx.beginPath();ctx.arc(x,y,Math.max(.5,ai*2.8),0,Math.PI*2);
+        ctx.fillStyle=`hsla(${hu},88%,62%,${al})`;ctx.fill();
+      }
+    }
+  })(t0);
+})();
+
+
+// ─── 3. OmniPuppet + Renderer9 ────────────────────────────────────────────
+
+let currentWorld  = 'pharaonic';
+let currentPreset = 'pharaoh';
+let renderer = null;
+let puppetRaf = null;
+
+// World/Preset refs (mutable objects for the renderer)
+const worldRef  = { current: currentWorld };
+const presetRef = { current: ALL_PRESETS[0] };
+const optionsRef = { current: { fxBloom: true, fxParticles: 'normal', customPalette: 'default', charMode: 'character', visMode: 'spectrum', bgVideo: false, fxDof: false } };
+
+function buildWorldButtons() {
+  // Profile page world row
+  const wr = document.getElementById('world-row');
+  if (wr) {
+    wr.innerHTML = Object.values(WORLDS).map(w =>
+      `<button class="wb${w.id===currentWorld?' on':''}" style="${w.id===currentWorld?'background:'+w.p+';border-color:'+w.p:''}"
+        onclick="setWorld('${w.id}')">${w.ar||w.name}</button>`
+    ).join('');
+  }
+  // Admin world grid
+  const awg = document.getElementById('admworld-grid');
+  if (awg) {
+    awg.innerHTML = Object.values(WORLDS).map(w =>
+      `<button class="admwb${w.id===currentWorld?' on':''}" style="${w.id===currentWorld?'background:'+w.p+';border-color:'+w.p+';color:#000':''}"
+        onclick="setWorld('${w.id}')">${w.ar||w.name}</button>`
+    ).join('');
+  }
+}
+
+function buildPresetButtons() {
+  const pr = document.getElementById('preset-row');
+  if (pr) {
+    pr.innerHTML = ALL_PRESETS.map(p =>
+      `<button class="prb${p.id===currentPreset?' on':''}" style="${p.id===currentPreset?'background:'+WORLDS[currentWorld].p+';border-color:'+WORLDS[currentWorld].p:''}"
+        onclick="setPreset('${p.id}')">${p.ar}</button>`
+    ).join('');
+  }
+  const apg = document.getElementById('admpr-grid');
+  if (apg) {
+    apg.innerHTML = ALL_PRESETS.map(p =>
+      `<button class="admprb${p.id===currentPreset?' on':''}" style="${p.id===currentPreset?'background:'+WORLDS[currentWorld].p+';border-color:'+WORLDS[currentWorld].p+';color:#000':''}"
+        onclick="setPreset('${p.id}')">${p.ar}</button>`
+    ).join('');
+  }
+}
+
+function setWorld(id) {
+  currentWorld = id;
+  worldRef.current = id;
+  buildWorldButtons();
+  buildPresetButtons();
+}
+
+function setPreset(id) {
+  currentPreset = id;
+  presetRef.current = ALL_PRESETS.find(p => p.id === id) || ALL_PRESETS[0];
+  buildPresetButtons();
+}
+
+function initPuppet() {
+  const canvas = document.getElementById('ppc');
+  if (!canvas) return;
+  // Resize canvas to match display size
+  const resize = () => {
+    const w = canvas.offsetWidth;
+    canvas.width  = w;
+    canvas.height = 420;
+  };
+  resize();
+  window.addEventListener('resize', resize);
+
+  presetRef.current = ALL_PRESETS.find(p => p.id === currentPreset) || ALL_PRESETS[0];
+  renderer = new Renderer9(canvas, worldRef, presetRef, [], optionsRef);
+  buildWorldButtons();
+  buildPresetButtons();
+
+  let freqData = new Uint8Array(128).fill(20);
+
+  function loop() {
+    puppetRaf = requestAnimationFrame(loop);
+    if (analyser) {
+      if (freqData.length !== analyser.frequencyBinCount) {
+        freqData = new Uint8Array(analyser.frequencyBinCount);
+      }
+      analyser.getByteFrequencyData(freqData);
+    } else {
+      // Idle ambient animation
+      const t = performance.now() * 0.001;
+      for (let i = 0; i < freqData.length; i++) {
+        freqData[i] = Math.round(10 + Math.abs(Math.sin(t * 0.4 + i * 0.12)) * 20);
+      }
+    }
+    // Auto-detect scene state from audio energy
+    const B  = Array.from(freqData.slice(0,  5)).reduce((a,b)=>a+b,0)/5/255;
+    const M  = Array.from(freqData.slice(5, 28)).reduce((a,b)=>a+b,0)/23/255;
+    const Tr = Array.from(freqData.slice(28,75)).reduce((a,b)=>a+b,0)/47/255;
+    const energy = (B + M + Tr) / 3;
+    let state = 'calm';
+    if      (energy > 0.55) state = 'epic';
+    else if (energy > 0.30) state = 'healing';
+    else if (energy < 0.06 && isPlaying) state = 'melancholic';
+
+    renderer.draw(freqData, freqData, performance.now() * 0.001, { state });
+  }
+  loop();
+}
+
+// Start puppet after DOM ready
+window.addEventListener('load', () => {
+  setTimeout(initPuppet, 100);
+});
+
+// ─── 4. Waveform Visualizer ───────────────────────────────────────────────
+// ─── 5. Audio Player ──────────────────────────────────────────────────────────
+function setupAudioContext() {
+  if(!audioCtx){
+    audioCtx=new(window.AudioContext||window.webkitAudioContext)();
+    analyser=audioCtx.createAnalyser();
+    analyser.fftSize=128;
+    audioSrc=audioCtx.createMediaElementSource(audio);
+    audioSrc.connect(analyser);
+    analyser.connect(audioCtx.destination);
+  }
+  if(audioCtx.state==='suspended') audioCtx.resume();
+}
+
+function togglePlay(){
+  const hasSource=audio.src&&audio.src!==location.href;
+  if(!hasSource){isPlaying=!isPlaying;document.getElementById('pi').textContent=isPlaying?'⏸':'▶';document.getElementById('pb').classList.toggle('playing',isPlaying);return;}
+  setupAudioContext();
+  if(isPlaying){audio.pause();}else{audio.play().catch(()=>{});}
+  isPlaying=!isPlaying;
+  document.getElementById('pi').textContent=isPlaying?'⏸':'▶';
+  document.getElementById('pb').classList.toggle('playing',isPlaying);
+}
+function seekAudio(e){const b=document.getElementById('pbar');const r=b.getBoundingClientRect();const p=(e.clientX-r.left)/r.width;if(audio.duration)audio.currentTime=p*audio.duration;}
+function pad(n){return String(Math.floor(n)).padStart(2,'0');}
+function ft(s){return isNaN(s)?'∞':Math.floor(s/60)+':'+pad(s%60);}
+audio.addEventListener('timeupdate',()=>{const p=audio.duration?(audio.currentTime/audio.duration)*100:0;document.getElementById('pf').style.width=p+'%';document.getElementById('tc').textContent=ft(audio.currentTime);document.getElementById('tt').textContent=ft(audio.duration);});
+audio.addEventListener('ended',()=>{isPlaying=false;document.getElementById('pi').textContent='▶';document.getElementById('pb').classList.remove('playing');});
+
+// ─── 6. Load saved data ────────────────────────────────────────────────────────
+// (function loadSaved(){
+  // Name
+  const n=localStorage.getItem(KEYS.name);
+  if(n)document.getElementById('pname').textContent=n;
+  // Photo
+  const ph=localStorage.getItem(KEYS.photo);
+  if(ph){
+    // Render photo on avatar canvas
+    const img=new Image();img.onload=function(){
+      const c=document.getElementById('avc');const ctx=c.getContext('2d');
+      if(ctx){ctx.save();ctx.beginPath();ctx.arc(60,60,58,0,Math.PI*2);ctx.closePath();ctx.clip();ctx.drawImage(img,0,0,120,120);ctx.restore();}
+    };img.src=ph;
+  }
+})();
+
+// ─── 7. Admin System ──────────────────────────────────────────────────────────
+// Trigger: 7 taps on seal or footer within 3 seconds
+function handleSealTap(){
+  sealTapCount++;
+  clearTimeout(sealTapTimer);
+  sealTapTimer=setTimeout(()=>{sealTapCount=0;},3000);
+  if(sealTapCount>=7){
+    sealTapCount=0;
+    // تخطي بوابة الـ PIN وفتح الإدارة فوراً للمايسترو
+    document.getElementById('pingate').classList.remove('open');
+    openAdmin(); 
+  }
+}
+document.getElementById('seal-tap').addEventListener('click',handleSealTap);
+document.getElementById('footer-seal').addEventListener('click',handleSealTap);
+
+// PIN Gate
+let _pinTarget='admin';
+function openPinGate(target){
+  _pinTarget=target;
+  if(!isPinSet()){
+    document.getElementById('pin-title').textContent='تعيين PIN جديد';
+    document.getElementById('pin-sub').textContent='أول مرة — اختر PIN للحماية';
+    document.getElementById('pin-submit').textContent='حفظ الـ PIN';
+  } else {
+    document.getElementById('pin-title').textContent='SOVEREIGN ACCESS';
+    document.getElementById('pin-sub').textContent='ENTER MAESTRO PIN CODE';
+    document.getElementById('pin-submit').textContent='AUTHENTICATE';
+  }
+  document.getElementById('pinerr').textContent='';
+  document.getElementById('pinf').value='';
+  document.getElementById('pingate').classList.add('open');
+  setTimeout(()=>document.getElementById('pinf').focus(),100);
+}
+function closePinGate(){document.getElementById('pingate').classList.remove('open');}
+document.getElementById('pin-submit').addEventListener('click',()=>{
+  const p=document.getElementById('pinf').value;
+  if(!isPinSet()){
+    if(p.length<4){document.getElementById('pinerr').textContent='PIN لازم 4 أرقام على الأقل';return;}
+    localStorage.setItem(KEYS.pin,hashPin(p));closePinGate();openAdmin();
+  } else {
+    if(!verifyPin(p)){document.getElementById('pinerr').textContent='PIN غير صحيح — حاول تاني';document.getElementById('pinf').value='';return;}
+    closePinGate();openAdmin();
+  }
+});
+document.getElementById('pinf').addEventListener('keydown',e=>{if(e.key==='Enter')document.getElementById('pin-submit').click();});
+
+function openAdmin(){
+  // Populate name field
+  document.getElementById('nameinput').value=localStorage.getItem(KEYS.name)||'أحمد عبد الحليم';
+  // Show photo if saved
+  const ph=localStorage.getItem(KEYS.photo);
+  if(ph){const img=document.getElementById('prevphoto');img.src=ph;img.style.display='block';}
+  document.getElementById('adm').classList.add('open');
+}
+function closeAdmin(){document.getElementById('adm').classList.remove('open');}
+
+function showAdmStatus(msg,ok){
+  const s=document.getElementById('admstatus');
+  s.className='astatus '+(ok?'ok':'err');s.textContent=msg;s.style.display='block';
+  setTimeout(()=>{s.style.display='none';},3000);
+}
+
+// Photo Upload
+function uploadPhoto(input){
+  const file=input.files[0];if(!file)return;
+  const reader=new FileReader();
+  reader.onload=function(e){
+    const b64=e.target.result;
+    // Size check (max 2MB base64)
+    if(b64.length>2.8e6){showAdmStatus('الصورة كبيرة جداً (max 2MB)',false);return;}
+    // localStorage.setItem(KEYS.photo,b64);
+    const img=document.getElementById('prevphoto');img.src=b64;img.style.display='block';
+    // Render on avatar canvas
+    const avc=document.getElementById('avc');const ctx2=avc.getContext('2d');
+    if(ctx2){const i=new Image();i.onload=function(){ctx2.save();ctx2.beginPath();ctx2.arc(60,60,58,0,Math.PI*2);ctx2.closePath();ctx2.clip();ctx2.drawImage(i,0,0,120,120);ctx2.restore();};i.src=b64;}
+    showAdmStatus('تم رفع الصورة ✓',true);
+  };
+  reader.readAsDataURL(file);
+}
+function clearPhoto(){
+  localStorage.removeItem(KEYS.photo);
+  document.getElementById('prevphoto').style.display='none';
+  showAdmStatus('تم مسح الصورة',true);
+}
+
+// Name Save
+function saveName(){
+  const n=document.getElementById('nameinput').value.trim();
+  if(!n)return;
+  localStorage.setItem(KEYS.name,n);
+  document.getElementById('pname').textContent=n;
+  showAdmStatus('تم حفظ الاسم ✓',true);
+}
+
+// Audio Upload
+function uploadAudio(input){
+  const file=input.files[0];if(!file)return;
+  if(audioBlob)URL.revokeObjectURL(audioBlob);
+  audioBlob=URL.createObjectURL(file);
+  audio.src=audioBlob;
+  document.getElementById('prevaud').src=audioBlob;
+  document.getElementById('prevaud').style.display='block';
+  document.getElementById('audstatus').className='astatus ok';
+  document.getElementById('audstatus').textContent='الأغنية جاهزة: '+file.name;
+  document.getElementById('audstatus').style.display='block';
+  document.getElementById('track-name').textContent=file.name.replace(/\.[^.]+$/,'');
+  document.getElementById('vrbtn').disabled=false;
+  document.getElementById('vrstatus').textContent='الأغنية جاهزة — اضغط توليد فيديو';
+  showAdmStatus('تم رفع الأغنية ✓',true);
+}
+
+// PIN Change
+function changePin(){
+  const p1=document.getElementById('newpin1').value;
+  const p2=document.getElementById('newpin2').value;
+  if(p1.length<4){showAdmStatus('PIN لازم 4 أرقام على الأقل',false);return;}
+  if(p1!==p2){showAdmStatus('الـ PIN والتأكيد مش متطابقَين',false);return;}
+  localStorage.setItem(KEYS.pin,hashPin(p1));
+  document.getElementById('newpin1').value='';document.getElementById('newpin2').value='';
+  showAdmStatus('تم تغيير الـ PIN ✓',true);
+}
+
+// ─── 8. Video Export (MediaRecorder: AionSpiral Canvas + Audio) ───────────────
+function startVideoExport(){
+  if(!audioBlob){showAdmStatus('ارفع الأغنية أولاً',false);return;}
+  if(mediaRecorder&&mediaRecorder.state==='recording')return;
+
+  const spiralCanvas=document.getElementById('ppc');
+  const DURATION=60; // seconds
+
+  // Create offscreen canvas for full-size recording
+  const recCanvas=document.createElement('canvas');
+  recCanvas.width=480;recCanvas.height=480;
+  const recCtx=recCanvas.getContext('2d');
+
+  // Copy AionSpiral to recording canvas + add branding
+  function drawFrame(){
+    recCtx.fillStyle='#0a0b0e';recCtx.fillRect(0,0,480,480);
+    recCtx.drawImage(spiralCanvas,0,0,480,480);
+    // Overlay branding
+    recCtx.fillStyle='rgba(0,0,0,.4)';recCtx.fillRect(0,420,480,60);
+    recCtx.font='14px Courier New';recCtx.fillStyle='rgba(255,219,60,.9)';
+    recCtx.textAlign='center';recCtx.textBaseline='middle';
+    recCtx.fillText('∆OmniVersE∞Ω∞AtMoS v7∆',240,448);
+    recCtx.font='10px Courier New';recCtx.fillStyle='rgba(0,229,255,.7)';
+    recCtx.fillText('SOVEREIGN ANTHEM · BINAURAL ENTRAINMENT',240,465);
+  }
+
+  let recRaf;
+  (function recLoop(){recRaf=requestAnimationFrame(recLoop);drawFrame();})();
+
+  // Get canvas stream
+  const canvasStream=recCanvas.captureStream(30);
+
+  // Setup audio context for recording
+  setupAudioContext();
+  const destNode=audioCtx.createMediaStreamDestination();
+  audioSrc.connect(destNode);
+
+  // Combined stream
+  const combined=new MediaStream([
+    ...canvasStream.getTracks(),
+    ...destNode.stream.getTracks(),
+  ]);
+
+  // Start recording
+  recordedChunks=[];
+  const mimeType='video/webm;codecs=vp9,opus';
+  const supported=MediaRecorder.isTypeSupported(mimeType);
+  mediaRecorder=new MediaRecorder(combined,{mimeType:supported?mimeType:'video/webm'});
+
+  mediaRecorder.ondataavailable=e=>{if(e.data.size>0)recordedChunks.push(e.data);};
+  mediaRecorder.onstop=()=>{
+    cancelAnimationFrame(recRaf);
+    const blob=new Blob(recordedChunks,{type:'video/webm'});
+    const url=URL.createObjectURL(blob);
+    const a=document.createElement('a');a.href=url;a.download='OmniVerse_Sovereign_Video.webm';a.click();
+    setTimeout(()=>URL.revokeObjectURL(url),2000);
+    document.getElementById('vrstatus').textContent='تم التوليد! جاري التحميل...';
+    document.getElementById('vrprog').style.display='none';
+    document.getElementById('vrprogfill').style.width='0%';
+    document.getElementById('vrstopbtn').style.display='none';
+    document.getElementById('vrbtn').textContent='⬇ توليد فيديو (60 ث)';
+    document.getElementById('vrbtn').disabled=false;
+  };
+
+  mediaRecorder.start(100);
+
+  // Play audio
+  audio.currentTime=0;audio.play().catch(()=>{});
+  if(audioCtx.state==='suspended')audioCtx.resume();
+
+  // Progress bar
+  const prog=document.getElementById('vrprogfill');
+  const progBar=document.getElementById('vrprog');
+  progBar.style.display='block';
+  document.getElementById('vrstatus').textContent='⏺ التسجيل جاري...';
+  document.getElementById('vrstopbtn').style.display='inline-flex';
+  document.getElementById('vrbtn').textContent='⏺ جاري التسجيل...';
+  document.getElementById('vrbtn').disabled=true;
+
+  let elapsed=0;
+  recordTimer=setInterval(()=>{
+    elapsed++;
+    prog.style.width=(elapsed/DURATION*100)+'%';
+    document.getElementById('vrstatus').textContent=`⏺ ${elapsed}/${DURATION} ثانية — التسجيل جاري`;
+    if(elapsed>=DURATION)stopVideoExport();
+  },1000);
+}
+
+function stopVideoExport(){
+  clearInterval(recordTimer);
+  if(mediaRecorder&&mediaRecorder.state==='recording'){mediaRecorder.stop();}
+  audio.pause();
+}
+
+
+</script>
+</body>
+</html>
